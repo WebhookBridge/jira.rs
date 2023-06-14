@@ -10,8 +10,6 @@
 
 /// CreatedIssueWatchers : The response code and messages related to any requested watchers.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreatedIssueWatchers {
     #[serde(rename = "errorCollection", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl CreatedIssueWatchers {
         }
     }
 }
-
-

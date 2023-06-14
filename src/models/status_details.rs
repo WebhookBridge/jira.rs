@@ -10,8 +10,6 @@
 
 /// StatusDetails : A status.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusDetails {
     /// The description of the status.
@@ -46,5 +44,3 @@ impl StatusDetails {
         }
     }
 }
-
-

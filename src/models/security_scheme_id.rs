@@ -10,8 +10,6 @@
 
 /// SecuritySchemeId : The ID of the issue security scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecuritySchemeId {
     /// The ID of the issue security scheme.
@@ -22,10 +20,6 @@ pub struct SecuritySchemeId {
 impl SecuritySchemeId {
     /// The ID of the issue security scheme.
     pub fn new(id: String) -> SecuritySchemeId {
-        SecuritySchemeId {
-            id,
-        }
+        SecuritySchemeId { id }
     }
 }
-
-

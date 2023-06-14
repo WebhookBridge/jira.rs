@@ -10,8 +10,6 @@
 
 /// ProjectFeature : Details of a project feature.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectFeature {
     /// The key of the feature.
@@ -21,7 +19,10 @@ pub struct ProjectFeature {
     #[serde(rename = "imageUri", skip_serializing_if = "Option::is_none")]
     pub image_uri: Option<String>,
     /// Localized display description for the feature.
-    #[serde(rename = "localisedDescription", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "localisedDescription",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub localised_description: Option<String>,
     /// Localized display name for the feature.
     #[serde(rename = "localisedName", skip_serializing_if = "Option::is_none")]
@@ -72,4 +73,3 @@ impl Default for State {
         Self::Enabled
     }
 }
-

@@ -10,15 +10,16 @@
 
 /// DashboardGadgetSettings : Details of the settings for a dashboard gadget.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DashboardGadgetSettings {
     /// The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`.
     #[serde(rename = "color", skip_serializing_if = "Option::is_none")]
     pub color: Option<String>,
     /// Whether to ignore the validation of module key and URI. For example, when a gadget is created that is a part of an application that isn't installed.
-    #[serde(rename = "ignoreUriAndModuleKeyValidation", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "ignoreUriAndModuleKeyValidation",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub ignore_uri_and_module_key_validation: Option<bool>,
     /// The module key of the gadget type. Can't be provided with `uri`.
     #[serde(rename = "moduleKey", skip_serializing_if = "Option::is_none")]
@@ -46,5 +47,3 @@ impl DashboardGadgetSettings {
         }
     }
 }
-
-

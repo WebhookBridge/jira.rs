@@ -10,8 +10,6 @@
 
 /// IssueBean : Details about an issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueBean {
     #[serde(rename = "changelog", skip_serializing_if = "Option::is_none")]
@@ -52,8 +50,13 @@ pub struct IssueBean {
     #[serde(rename = "transitions", skip_serializing_if = "Option::is_none")]
     pub transitions: Option<Vec<crate::models::IssueTransition>>,
     /// The versions of each field on the issue.
-    #[serde(rename = "versionedRepresentations", skip_serializing_if = "Option::is_none")]
-    pub versioned_representations: Option<::std::collections::HashMap<String, ::std::collections::HashMap<String, serde_json::Value>>>,
+    #[serde(
+        rename = "versionedRepresentations",
+        skip_serializing_if = "Option::is_none"
+    )]
+    pub versioned_representations: Option<
+        ::std::collections::HashMap<String, ::std::collections::HashMap<String, serde_json::Value>>,
+    >,
 }
 
 impl IssueBean {
@@ -78,5 +81,3 @@ impl IssueBean {
         }
     }
 }
-
-

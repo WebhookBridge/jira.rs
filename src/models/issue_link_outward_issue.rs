@@ -10,8 +10,6 @@
 
 /// IssueLinkOutwardIssue : Provides details about the linked issue. If presenting this link in a user interface, use the `outward` field of the issue link type to label the link.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueLinkOutwardIssue {
     #[serde(rename = "fields", skip_serializing_if = "Option::is_none")]
@@ -38,5 +36,3 @@ impl IssueLinkOutwardIssue {
         }
     }
 }
-
-

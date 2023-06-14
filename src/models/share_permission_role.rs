@@ -10,8 +10,6 @@
 
 /// SharePermissionRole : The project role that the filter is shared with.   For a request, specify the `id` for the role. You must also specify the `project` object and `id` for the project that the role is in.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SharePermissionRole {
     /// The list of users who act in this role.
@@ -66,5 +64,3 @@ impl SharePermissionRole {
         }
     }
 }
-
-

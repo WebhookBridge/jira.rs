@@ -10,8 +10,6 @@
 
 /// CreateResolutionDetails : Details of an issue resolution.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateResolutionDetails {
     /// The description of the resolution.
@@ -31,5 +29,3 @@ impl CreateResolutionDetails {
         }
     }
 }
-
-

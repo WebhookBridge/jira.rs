@@ -10,8 +10,6 @@
 
 /// JiraExpressionsComplexityBeanExpensiveOperations : The number of expensive operations executed while evaluating the expression. Expensive operations are those that load additional data, such as entity properties, comments, or custom fields.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionsComplexityBeanExpensiveOperations {
     /// The maximum allowed complexity. The evaluation will fail if this value is exceeded.
@@ -25,11 +23,6 @@ pub struct JiraExpressionsComplexityBeanExpensiveOperations {
 impl JiraExpressionsComplexityBeanExpensiveOperations {
     /// The number of expensive operations executed while evaluating the expression. Expensive operations are those that load additional data, such as entity properties, comments, or custom fields.
     pub fn new(limit: i32, value: i32) -> JiraExpressionsComplexityBeanExpensiveOperations {
-        JiraExpressionsComplexityBeanExpensiveOperations {
-            limit,
-            value,
-        }
+        JiraExpressionsComplexityBeanExpensiveOperations { limit, value }
     }
 }
-
-

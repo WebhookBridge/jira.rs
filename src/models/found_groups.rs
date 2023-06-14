@@ -10,8 +10,6 @@
 
 /// FoundGroups : The list of groups found in a search, including header text (Showing X of Y matching groups) and total of matched groups.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FoundGroups {
     #[serde(rename = "groups", skip_serializing_if = "Option::is_none")]
@@ -34,5 +32,3 @@ impl FoundGroups {
         }
     }
 }
-
-

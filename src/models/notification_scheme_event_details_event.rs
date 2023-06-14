@@ -10,8 +10,6 @@
 
 /// NotificationSchemeEventDetailsEvent : The ID of the event.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationSchemeEventDetailsEvent {
     /// The ID of the notification scheme event.
@@ -22,10 +20,6 @@ pub struct NotificationSchemeEventDetailsEvent {
 impl NotificationSchemeEventDetailsEvent {
     /// The ID of the event.
     pub fn new(id: String) -> NotificationSchemeEventDetailsEvent {
-        NotificationSchemeEventDetailsEvent {
-            id,
-        }
+        NotificationSchemeEventDetailsEvent { id }
     }
 }
-
-

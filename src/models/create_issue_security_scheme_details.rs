@@ -10,8 +10,6 @@
 
 /// CreateIssueSecuritySchemeDetails : Issue security scheme and it's details
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateIssueSecuritySchemeDetails {
     /// The description of the issue security scheme.
@@ -35,5 +33,3 @@ impl CreateIssueSecuritySchemeDetails {
         }
     }
 }
-
-

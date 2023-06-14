@@ -10,8 +10,6 @@
 
 /// CreateWorkflowTransitionRulesDetailsConditions : The workflow conditions.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateWorkflowTransitionRulesDetailsConditions {
     /// The list of workflow conditions.
@@ -54,4 +52,3 @@ impl Default for Operator {
         Self::And
     }
 }
-

@@ -10,8 +10,6 @@
 
 /// ChangedWorklog : Details of a changed worklog.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ChangedWorklog {
     /// Details of properties associated with the change.
@@ -35,5 +33,3 @@ impl ChangedWorklog {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// SharePermissionProject : The project that the filter is shared with. This is similar to the project object returned by [Get project](#api-rest-api-3-project-projectIdOrKey-get) but it contains a subset of the properties, which are: `self`, `id`, `key`, `assigneeType`, `name`, `roles`, `avatarUrls`, `projectType`, `simplified`.   For a request, specify the `id` for the project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SharePermissionProject {
     /// Whether the project is archived.
@@ -195,4 +193,3 @@ impl Default for Style {
         Self::Classic
     }
 }
-

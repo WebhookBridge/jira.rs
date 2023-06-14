@@ -10,8 +10,6 @@
 
 /// ProjectAvatarUrls : The URLs of the project's avatars.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectAvatarUrls {
     /// The URL of the item's 16x16 pixel avatar.
@@ -39,5 +37,3 @@ impl ProjectAvatarUrls {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// CreatePriorityDetails : Details of an issue priority.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreatePriorityDetails {
     /// The description of the priority.
@@ -70,4 +68,3 @@ impl Default for IconUrl {
         Self::BlockerPeriodPng
     }
 }
-

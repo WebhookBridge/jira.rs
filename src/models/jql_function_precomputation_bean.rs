@@ -10,8 +10,6 @@
 
 /// JqlFunctionPrecomputationBean : Jql function precomputation.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlFunctionPrecomputationBean {
     #[serde(rename = "arguments", skip_serializing_if = "Option::is_none")]
@@ -53,5 +51,3 @@ impl JqlFunctionPrecomputationBean {
         }
     }
 }
-
-

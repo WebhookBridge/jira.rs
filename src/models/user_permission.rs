@@ -10,8 +10,6 @@
 
 /// UserPermission : Details of a permission and its availability to a user.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UserPermission {
     /// Indicate whether the permission key is deprecated. Note that deprecated keys cannot be used in the `permissions parameter of Get my permissions. Deprecated keys are not returned by Get all permissions.`
@@ -66,4 +64,3 @@ impl Default for RHashType {
         Self::Global
     }
 }
-

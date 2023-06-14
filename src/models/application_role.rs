@@ -10,15 +10,16 @@
 
 /// ApplicationRole : Details of an application role.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ApplicationRole {
     /// The groups that are granted default access for this application role. As a group's name can change, use of `defaultGroupsDetails` is recommended to identify a groups.
     #[serde(rename = "defaultGroups", skip_serializing_if = "Option::is_none")]
     pub default_groups: Option<Vec<String>>,
     /// The groups that are granted default access for this application role.
-    #[serde(rename = "defaultGroupsDetails", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "defaultGroupsDetails",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub default_groups_details: Option<Vec<crate::models::GroupName>>,
     /// Deprecated.
     #[serde(rename = "defined", skip_serializing_if = "Option::is_none")]
@@ -53,7 +54,10 @@ pub struct ApplicationRole {
     #[serde(rename = "userCount", skip_serializing_if = "Option::is_none")]
     pub user_count: Option<i32>,
     /// The [type of users](https://confluence.atlassian.com/x/lRW3Ng) being counted against your license.
-    #[serde(rename = "userCountDescription", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "userCountDescription",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub user_count_description: Option<String>,
 }
 
@@ -78,5 +82,3 @@ impl ApplicationRole {
         }
     }
 }
-
-

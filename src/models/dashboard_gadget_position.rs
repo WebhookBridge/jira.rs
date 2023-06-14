@@ -10,8 +10,6 @@
 
 /// DashboardGadgetPosition : The position of the gadget.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DashboardGadgetPosition {
     #[serde(rename = "The column position of the gadget.")]
@@ -22,12 +20,13 @@ pub struct DashboardGadgetPosition {
 
 impl DashboardGadgetPosition {
     /// The position of the gadget.
-    pub fn new(the_column_position_of_the_gadget_period: i32, the_row_position_of_the_gadget_period: i32) -> DashboardGadgetPosition {
+    pub fn new(
+        the_column_position_of_the_gadget_period: i32,
+        the_row_position_of_the_gadget_period: i32,
+    ) -> DashboardGadgetPosition {
         DashboardGadgetPosition {
             the_column_position_of_the_gadget_period,
             the_row_position_of_the_gadget_period,
         }
     }
 }
-
-

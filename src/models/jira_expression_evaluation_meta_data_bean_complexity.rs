@@ -10,8 +10,6 @@
 
 /// JiraExpressionEvaluationMetaDataBeanComplexity : Contains information about the expression complexity. For example, the number of steps it took to evaluate the expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionEvaluationMetaDataBeanComplexity {
     #[serde(rename = "beans")]
@@ -26,7 +24,12 @@ pub struct JiraExpressionEvaluationMetaDataBeanComplexity {
 
 impl JiraExpressionEvaluationMetaDataBeanComplexity {
     /// Contains information about the expression complexity. For example, the number of steps it took to evaluate the expression.
-    pub fn new(beans: crate::models::JiraExpressionsComplexityBeanBeans, expensive_operations: crate::models::JiraExpressionsComplexityBeanExpensiveOperations, primitive_values: crate::models::JiraExpressionsComplexityBeanPrimitiveValues, steps: crate::models::JiraExpressionsComplexityBeanSteps) -> JiraExpressionEvaluationMetaDataBeanComplexity {
+    pub fn new(
+        beans: crate::models::JiraExpressionsComplexityBeanBeans,
+        expensive_operations: crate::models::JiraExpressionsComplexityBeanExpensiveOperations,
+        primitive_values: crate::models::JiraExpressionsComplexityBeanPrimitiveValues,
+        steps: crate::models::JiraExpressionsComplexityBeanSteps,
+    ) -> JiraExpressionEvaluationMetaDataBeanComplexity {
         JiraExpressionEvaluationMetaDataBeanComplexity {
             beans: Box::new(beans),
             expensive_operations: Box::new(expensive_operations),
@@ -35,5 +38,3 @@ impl JiraExpressionEvaluationMetaDataBeanComplexity {
         }
     }
 }
-
-

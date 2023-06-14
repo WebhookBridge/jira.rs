@@ -10,8 +10,6 @@
 
 /// NotificationSchemeScope : The scope of the notification scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationSchemeScope {
     #[serde(rename = "project", skip_serializing_if = "Option::is_none")]
@@ -45,4 +43,3 @@ impl Default for RHashType {
         Self::Project
     }
 }
-

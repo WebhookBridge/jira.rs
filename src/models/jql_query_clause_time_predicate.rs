@@ -10,8 +10,6 @@
 
 /// JqlQueryClauseTimePredicate : A time predicate for a temporal JQL clause.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlQueryClauseTimePredicate {
     #[serde(rename = "operand")]
@@ -23,7 +21,10 @@ pub struct JqlQueryClauseTimePredicate {
 
 impl JqlQueryClauseTimePredicate {
     /// A time predicate for a temporal JQL clause.
-    pub fn new(operand: crate::models::JqlQueryClauseOperand, operator: Operator) -> JqlQueryClauseTimePredicate {
+    pub fn new(
+        operand: crate::models::JqlQueryClauseOperand,
+        operator: Operator,
+    ) -> JqlQueryClauseTimePredicate {
         JqlQueryClauseTimePredicate {
             operand: Box::new(operand),
             operator,
@@ -55,4 +56,3 @@ impl Default for Operator {
         Self::Before
     }
 }
-

@@ -10,8 +10,6 @@
 
 /// FieldValueClause : A clause that asserts the current value of a field. For example, `summary ~ test`.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldValueClause {
     #[serde(rename = "field")]
@@ -25,7 +23,11 @@ pub struct FieldValueClause {
 
 impl FieldValueClause {
     /// A clause that asserts the current value of a field. For example, `summary ~ test`.
-    pub fn new(field: crate::models::JqlQueryField, operand: crate::models::JqlQueryClauseOperand, operator: Operator) -> FieldValueClause {
+    pub fn new(
+        field: crate::models::JqlQueryField,
+        operand: crate::models::JqlQueryClauseOperand,
+        operator: Operator,
+    ) -> FieldValueClause {
         FieldValueClause {
             field: Box::new(field),
             operand: Box::new(operand),
@@ -68,4 +70,3 @@ impl Default for Operator {
         Self::Equal
     }
 }
-

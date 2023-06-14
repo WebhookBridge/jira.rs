@@ -10,8 +10,6 @@
 
 /// HistoryMetadataGenerator : Details of the system that generated the history record.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct HistoryMetadataGenerator {
     /// The URL to an avatar for the user or system associated with a history record.
@@ -47,5 +45,3 @@ impl HistoryMetadataGenerator {
         }
     }
 }
-
-

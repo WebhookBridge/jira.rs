@@ -10,12 +10,15 @@
 
 /// WorklogVisibility : Details about any restrictions in the visibility of the worklog. Optional when creating or updating a worklog.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorklogVisibility {
     /// The ID of the group or the name of the role that visibility of this item is restricted to.
-    #[serde(rename = "identifier", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "identifier",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub identifier: Option<Option<String>>,
     /// Whether visibility of this item is restricted to a group or role.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
@@ -50,4 +53,3 @@ impl Default for RHashType {
         Self::Group
     }
 }
-

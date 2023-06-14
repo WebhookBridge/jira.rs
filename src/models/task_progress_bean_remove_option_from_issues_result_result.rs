@@ -10,8 +10,6 @@
 
 /// TaskProgressBeanRemoveOptionFromIssuesResultResult : The result of the task execution.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct TaskProgressBeanRemoveOptionFromIssuesResultResult {
     #[serde(rename = "errors", skip_serializing_if = "Option::is_none")]
@@ -34,5 +32,3 @@ impl TaskProgressBeanRemoveOptionFromIssuesResultResult {
         }
     }
 }
-
-

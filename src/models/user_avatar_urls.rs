@@ -10,8 +10,6 @@
 
 /// UserAvatarUrls : The avatars of the user.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UserAvatarUrls {
     /// The URL of the item's 16x16 pixel avatar.
@@ -39,5 +37,3 @@ impl UserAvatarUrls {
         }
     }
 }
-
-

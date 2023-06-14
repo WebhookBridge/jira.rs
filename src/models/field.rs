@@ -10,8 +10,6 @@
 
 /// Field : Details of a field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Field {
     /// Number of contexts where the field is used.
@@ -69,5 +67,3 @@ impl Field {
         }
     }
 }
-
-

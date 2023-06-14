@@ -10,8 +10,6 @@
 
 /// IssuesAndJqlQueries : List of issues and JQL queries.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssuesAndJqlQueries {
     /// A list of issue IDs.
@@ -25,11 +23,6 @@ pub struct IssuesAndJqlQueries {
 impl IssuesAndJqlQueries {
     /// List of issues and JQL queries.
     pub fn new(issue_ids: Vec<i64>, jqls: Vec<String>) -> IssuesAndJqlQueries {
-        IssuesAndJqlQueries {
-            issue_ids,
-            jqls,
-        }
+        IssuesAndJqlQueries { issue_ids, jqls }
     }
 }
-
-

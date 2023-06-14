@@ -10,12 +10,11 @@
 
 /// IssueTypeScreenSchemesProjects : Issue type screen scheme with a list of the projects that use it.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeScreenSchemesProjects {
     #[serde(rename = "issueTypeScreenScheme")]
-    pub issue_type_screen_scheme: Box<crate::models::IssueTypeScreenSchemesProjectsIssueTypeScreenScheme>,
+    pub issue_type_screen_scheme:
+        Box<crate::models::IssueTypeScreenSchemesProjectsIssueTypeScreenScheme>,
     /// The IDs of the projects using the issue type screen scheme.
     #[serde(rename = "projectIds")]
     pub project_ids: Vec<String>,
@@ -23,12 +22,13 @@ pub struct IssueTypeScreenSchemesProjects {
 
 impl IssueTypeScreenSchemesProjects {
     /// Issue type screen scheme with a list of the projects that use it.
-    pub fn new(issue_type_screen_scheme: crate::models::IssueTypeScreenSchemesProjectsIssueTypeScreenScheme, project_ids: Vec<String>) -> IssueTypeScreenSchemesProjects {
+    pub fn new(
+        issue_type_screen_scheme: crate::models::IssueTypeScreenSchemesProjectsIssueTypeScreenScheme,
+        project_ids: Vec<String>,
+    ) -> IssueTypeScreenSchemesProjects {
         IssueTypeScreenSchemesProjects {
             issue_type_screen_scheme: Box::new(issue_type_screen_scheme),
             project_ids,
         }
     }
 }
-
-

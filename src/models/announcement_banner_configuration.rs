@@ -10,8 +10,6 @@
 
 /// AnnouncementBannerConfiguration : Announcement banner configuration.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AnnouncementBannerConfiguration {
     /// Hash of the banner data. The client detects updates by comparing hash IDs.
@@ -58,4 +56,3 @@ impl Default for Visibility {
         Self::Public
     }
 }
-

@@ -10,8 +10,6 @@
 
 /// SetDefaultResolutionRequest : The new default issue resolution.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SetDefaultResolutionRequest {
     /// The ID of the new default issue resolution. Must be an existing ID or null. Setting this to null erases the default resolution setting.
@@ -22,10 +20,6 @@ pub struct SetDefaultResolutionRequest {
 impl SetDefaultResolutionRequest {
     /// The new default issue resolution.
     pub fn new(id: String) -> SetDefaultResolutionRequest {
-        SetDefaultResolutionRequest {
-            id,
-        }
+        SetDefaultResolutionRequest { id }
     }
 }
-
-

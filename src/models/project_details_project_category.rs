@@ -10,8 +10,6 @@
 
 /// ProjectDetailsProjectCategory : The category the project belongs to.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectDetailsProjectCategory {
     /// The name of the project category.
@@ -39,5 +37,3 @@ impl ProjectDetailsProjectCategory {
         }
     }
 }
-
-

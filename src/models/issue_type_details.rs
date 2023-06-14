@@ -10,8 +10,6 @@
 
 /// IssueTypeDetails : Details about an issue type.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeDetails {
     /// The ID of the issue type's avatar.
@@ -62,5 +60,3 @@ impl IssueTypeDetails {
         }
     }
 }
-
-

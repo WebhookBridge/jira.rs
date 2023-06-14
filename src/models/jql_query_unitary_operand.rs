@@ -10,8 +10,6 @@
 
 /// JqlQueryUnitaryOperand : An operand that can be part of a list operand.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlQueryUnitaryOperand {
     /// Encoded value, which can be used directly in a JQL query.
@@ -36,7 +34,12 @@ pub struct JqlQueryUnitaryOperand {
 
 impl JqlQueryUnitaryOperand {
     /// An operand that can be part of a list operand.
-    pub fn new(value: String, arguments: Vec<String>, function: String, keyword: Keyword) -> JqlQueryUnitaryOperand {
+    pub fn new(
+        value: String,
+        arguments: Vec<String>,
+        function: String,
+        keyword: Keyword,
+    ) -> JqlQueryUnitaryOperand {
         JqlQueryUnitaryOperand {
             encoded_value: None,
             value,
@@ -60,4 +63,3 @@ impl Default for Keyword {
         Self::Empty
     }
 }
-

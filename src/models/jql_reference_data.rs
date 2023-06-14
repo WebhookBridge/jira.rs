@@ -10,8 +10,6 @@
 
 /// JqlReferenceData : Lists of JQL reference data.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlReferenceData {
     /// List of JQL query reserved words.
@@ -21,7 +19,10 @@ pub struct JqlReferenceData {
     #[serde(rename = "visibleFieldNames", skip_serializing_if = "Option::is_none")]
     pub visible_field_names: Option<Vec<crate::models::FieldReferenceData>>,
     /// List of functions usable in JQL queries.
-    #[serde(rename = "visibleFunctionNames", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "visibleFunctionNames",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub visible_function_names: Option<Vec<crate::models::FunctionReferenceData>>,
 }
 
@@ -35,5 +36,3 @@ impl JqlReferenceData {
         }
     }
 }
-
-

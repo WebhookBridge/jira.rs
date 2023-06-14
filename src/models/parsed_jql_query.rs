@@ -10,8 +10,6 @@
 
 /// ParsedJqlQuery : Details of a parsed JQL query.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ParsedJqlQuery {
     /// The list of syntax or validation errors.
@@ -34,5 +32,3 @@ impl ParsedJqlQuery {
         }
     }
 }
-
-

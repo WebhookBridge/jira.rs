@@ -10,8 +10,6 @@
 
 /// StatusCreateRequest : Details of the statuses being created and their scope.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusCreateRequest {
     #[serde(rename = "scope")]
@@ -23,12 +21,13 @@ pub struct StatusCreateRequest {
 
 impl StatusCreateRequest {
     /// Details of the statuses being created and their scope.
-    pub fn new(scope: crate::models::StatusScope, statuses: Vec<crate::models::StatusCreate>) -> StatusCreateRequest {
+    pub fn new(
+        scope: crate::models::StatusScope,
+        statuses: Vec<crate::models::StatusCreate>,
+    ) -> StatusCreateRequest {
         StatusCreateRequest {
             scope: Box::new(scope),
             statuses,
         }
     }
 }
-
-

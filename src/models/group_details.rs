@@ -10,12 +10,15 @@
 
 /// GroupDetails : Details about a group.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GroupDetails {
     /// The ID of the group, which uniquely identifies the group across all Atlassian products. For example, *952d12c3-5b5b-4d04-bb32-44d383afc4b2*.
-    #[serde(rename = "groupId", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "groupId",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub group_id: Option<Option<String>>,
     /// The name of the group.
     #[serde(rename = "name", skip_serializing_if = "Option::is_none")]
@@ -31,5 +34,3 @@ impl GroupDetails {
         }
     }
 }
-
-

@@ -10,12 +10,15 @@
 
 /// SanitizedJqlQuery : Details of the sanitized JQL query.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SanitizedJqlQuery {
     /// The account ID of the user for whom sanitization was performed.
-    #[serde(rename = "accountId", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "accountId",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub account_id: Option<Option<String>>,
     #[serde(rename = "errors", skip_serializing_if = "Option::is_none")]
     pub errors: Option<Box<crate::models::SanitizedJqlQueryErrors>>,
@@ -23,7 +26,12 @@ pub struct SanitizedJqlQuery {
     #[serde(rename = "initialQuery", skip_serializing_if = "Option::is_none")]
     pub initial_query: Option<String>,
     /// The sanitized query, if there were no errors.
-    #[serde(rename = "sanitizedQuery", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "sanitizedQuery",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub sanitized_query: Option<Option<String>>,
 }
 
@@ -38,5 +46,3 @@ impl SanitizedJqlQuery {
         }
     }
 }
-
-

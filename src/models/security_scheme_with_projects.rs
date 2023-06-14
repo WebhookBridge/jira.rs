@@ -10,8 +10,6 @@
 
 /// SecuritySchemeWithProjects : Details about an issue security scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecuritySchemeWithProjects {
     /// The default level ID of the issue security scheme.
@@ -47,5 +45,3 @@ impl SecuritySchemeWithProjects {
         }
     }
 }
-
-

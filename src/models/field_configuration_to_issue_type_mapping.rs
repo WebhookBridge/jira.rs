@@ -10,8 +10,6 @@
 
 /// FieldConfigurationToIssueTypeMapping : The field configuration to issue type mapping.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldConfigurationToIssueTypeMapping {
     /// The ID of the field configuration.
@@ -24,12 +22,13 @@ pub struct FieldConfigurationToIssueTypeMapping {
 
 impl FieldConfigurationToIssueTypeMapping {
     /// The field configuration to issue type mapping.
-    pub fn new(field_configuration_id: String, issue_type_id: String) -> FieldConfigurationToIssueTypeMapping {
+    pub fn new(
+        field_configuration_id: String,
+        issue_type_id: String,
+    ) -> FieldConfigurationToIssueTypeMapping {
         FieldConfigurationToIssueTypeMapping {
             field_configuration_id,
             issue_type_id,
         }
     }
 }
-
-

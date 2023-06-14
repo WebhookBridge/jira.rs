@@ -10,8 +10,6 @@
 
 /// PriorityId : The ID of an issue priority.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PriorityId {
     /// The ID of the issue priority.
@@ -22,10 +20,6 @@ pub struct PriorityId {
 impl PriorityId {
     /// The ID of an issue priority.
     pub fn new(id: String) -> PriorityId {
-        PriorityId {
-            id,
-        }
+        PriorityId { id }
     }
 }
-
-

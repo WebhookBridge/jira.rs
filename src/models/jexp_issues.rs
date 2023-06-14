@@ -10,8 +10,6 @@
 
 /// JexpIssues : The JQL specifying the issues available in the evaluated Jira expression under the `issues` context variable.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JexpIssues {
     #[serde(rename = "jql", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct JexpIssues {
 impl JexpIssues {
     /// The JQL specifying the issues available in the evaluated Jira expression under the `issues` context variable.
     pub fn new() -> JexpIssues {
-        JexpIssues {
-            jql: None,
-        }
+        JexpIssues { jql: None }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// ConnectWorkflowTransitionRule : A workflow transition rule.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ConnectWorkflowTransitionRule {
     #[serde(rename = "configuration")]
@@ -28,7 +26,11 @@ pub struct ConnectWorkflowTransitionRule {
 
 impl ConnectWorkflowTransitionRule {
     /// A workflow transition rule.
-    pub fn new(configuration: crate::models::RuleConfiguration, id: String, key: String) -> ConnectWorkflowTransitionRule {
+    pub fn new(
+        configuration: crate::models::RuleConfiguration,
+        id: String,
+        key: String,
+    ) -> ConnectWorkflowTransitionRule {
         ConnectWorkflowTransitionRule {
             configuration: Box::new(configuration),
             id,
@@ -37,5 +39,3 @@ impl ConnectWorkflowTransitionRule {
         }
     }
 }
-
-

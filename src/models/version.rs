@@ -10,8 +10,6 @@
 
 /// Version : Details about a project version.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Version {
     /// Indicates that the version is archived. Optional when creating or updating a version.
@@ -26,10 +24,16 @@ pub struct Version {
     /// The ID of the version.
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
     pub id: Option<String>,
-    #[serde(rename = "issuesStatusForFixVersion", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "issuesStatusForFixVersion",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub issues_status_for_fix_version: Option<Box<crate::models::VersionIssuesStatusForFixVersion>>,
     /// The URL of the self link to the version to which all unfixed issues are moved when a version is released. Not applicable when creating a version. Optional when updating a version.
-    #[serde(rename = "moveUnfixedIssuesTo", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "moveUnfixedIssuesTo",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub move_unfixed_issues_to: Option<String>,
     /// The unique name of the version. Required when creating a version. Optional when updating a version. The maximum length is 255 characters.
     #[serde(rename = "name", skip_serializing_if = "Option::is_none")]
@@ -90,5 +94,3 @@ impl Version {
         }
     }
 }
-
-

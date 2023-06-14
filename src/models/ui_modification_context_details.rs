@@ -10,8 +10,6 @@
 
 /// UiModificationContextDetails : The details of a UI modification's context, which define where to activate the UI modification.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UiModificationContextDetails {
     /// The ID of the UI modification context.
@@ -33,7 +31,11 @@ pub struct UiModificationContextDetails {
 
 impl UiModificationContextDetails {
     /// The details of a UI modification's context, which define where to activate the UI modification.
-    pub fn new(issue_type_id: String, project_id: String, view_type: String) -> UiModificationContextDetails {
+    pub fn new(
+        issue_type_id: String,
+        project_id: String,
+        view_type: String,
+    ) -> UiModificationContextDetails {
         UiModificationContextDetails {
             id: None,
             is_available: None,
@@ -43,5 +45,3 @@ impl UiModificationContextDetails {
         }
     }
 }
-
-

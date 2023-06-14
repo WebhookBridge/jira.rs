@@ -10,12 +10,15 @@
 
 /// ContextualConfiguration : Details of the contextual configuration for a custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ContextualConfiguration {
     /// The field configuration.
-    #[serde(rename = "configuration", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "configuration",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub configuration: Option<Option<serde_json::Value>>,
     /// The ID of the field context the configuration is associated with.
     #[serde(rename = "fieldContextId")]
@@ -24,7 +27,12 @@ pub struct ContextualConfiguration {
     #[serde(rename = "id")]
     pub id: String,
     /// The field value schema.
-    #[serde(rename = "schema", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "schema",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub schema: Option<Option<serde_json::Value>>,
 }
 
@@ -39,5 +47,3 @@ impl ContextualConfiguration {
         }
     }
 }
-
-

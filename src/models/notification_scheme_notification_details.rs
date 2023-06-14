@@ -10,8 +10,6 @@
 
 /// NotificationSchemeNotificationDetails : Details of a notification within a notification scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationSchemeNotificationDetails {
     /// The notification type, e.g `CurrentAssignee`, `Group`, `EmailAddress`.
@@ -31,5 +29,3 @@ impl NotificationSchemeNotificationDetails {
         }
     }
 }
-
-

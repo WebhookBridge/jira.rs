@@ -10,8 +10,6 @@
 
 /// ComponentWithIssueCount : Details about a component with a count of the issues it contains.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ComponentWithIssueCount {
     #[serde(rename = "assignee", skip_serializing_if = "Option::is_none")]
@@ -26,7 +24,10 @@ pub struct ComponentWithIssueCount {
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
     pub id: Option<String>,
     /// Whether a user is associated with `assigneeType`. For example, if the `assigneeType` is set to `COMPONENT_LEAD` but the component lead is not set, then `false` is returned.
-    #[serde(rename = "isAssigneeTypeValid", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "isAssigneeTypeValid",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub is_assignee_type_valid: Option<bool>,
     /// Count of issues for the component.
     #[serde(rename = "issueCount", skip_serializing_if = "Option::is_none")]
@@ -109,4 +110,3 @@ impl Default for RealAssigneeType {
         Self::ProjectDefault
     }
 }
-

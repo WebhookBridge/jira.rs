@@ -10,8 +10,6 @@
 
 /// GroupUsers : A paginated list of the users that are members of the group. A maximum of 50 users is returned in the list, to access additional users append `[start-index:end-index]` to the expand request. For example, to access the next 50 users, use`?expand=users[51:100]`.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct GroupUsers {
     /// The index of the last item returned on the page.
@@ -43,5 +41,3 @@ impl GroupUsers {
         }
     }
 }
-
-

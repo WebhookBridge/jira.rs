@@ -10,8 +10,6 @@
 
 /// NotificationSchemeId : The ID of a notification scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationSchemeId {
     /// The ID of a notification scheme.
@@ -22,10 +20,6 @@ pub struct NotificationSchemeId {
 impl NotificationSchemeId {
     /// The ID of a notification scheme.
     pub fn new(id: String) -> NotificationSchemeId {
-        NotificationSchemeId {
-            id,
-        }
+        NotificationSchemeId { id }
     }
 }
-
-

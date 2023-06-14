@@ -10,8 +10,6 @@
 
 /// RoleActor : Details about a user assigned to a project role.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RoleActor {
     #[serde(rename = "actorGroup", skip_serializing_if = "Option::is_none")]
@@ -64,4 +62,3 @@ impl Default for RHashType {
         Self::GroupRoleActor
     }
 }
-

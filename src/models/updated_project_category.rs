@@ -10,8 +10,6 @@
 
 /// UpdatedProjectCategory : A project category.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdatedProjectCategory {
     /// The name of the project category.
@@ -39,5 +37,3 @@ impl UpdatedProjectCategory {
         }
     }
 }
-
-

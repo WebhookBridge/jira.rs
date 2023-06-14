@@ -10,15 +10,18 @@
 
 /// EntityProperty : An entity property, for more information see [Entity properties](https://developer.atlassian.com/cloud/jira/platform/jira-entity-properties/).
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct EntityProperty {
     /// The key of the property. Required on create and update.
     #[serde(rename = "key", skip_serializing_if = "Option::is_none")]
     pub key: Option<String>,
     /// The value of the property. Required on create and update.
-    #[serde(rename = "value", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "value",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub value: Option<Option<serde_json::Value>>,
 }
 
@@ -31,5 +34,3 @@ impl EntityProperty {
         }
     }
 }
-
-

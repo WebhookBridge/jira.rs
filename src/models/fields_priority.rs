@@ -10,8 +10,6 @@
 
 /// FieldsPriority : The priority of the linked issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldsPriority {
     /// The description of the issue priority.
@@ -51,5 +49,3 @@ impl FieldsPriority {
         }
     }
 }
-
-

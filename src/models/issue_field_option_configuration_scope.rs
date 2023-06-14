@@ -10,8 +10,6 @@
 
 /// IssueFieldOptionConfigurationScope : Defines the projects that the option is available in. If the scope is not defined, then the option is available in all projects.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueFieldOptionConfigurationScope {
     #[serde(rename = "global", skip_serializing_if = "Option::is_none")]
@@ -34,5 +32,3 @@ impl IssueFieldOptionConfigurationScope {
         }
     }
 }
-
-

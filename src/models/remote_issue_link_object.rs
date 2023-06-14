@@ -10,8 +10,6 @@
 
 /// RemoteIssueLinkObject : Details of the item linked to.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RemoteIssueLinkObject {
     #[serde(rename = "icon", skip_serializing_if = "Option::is_none")]
@@ -41,5 +39,3 @@ impl RemoteIssueLinkObject {
         }
     }
 }
-
-

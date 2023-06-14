@@ -10,8 +10,6 @@
 
 /// NotificationRestrict : Restricts the notifications to users with the specified permissions.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationRestrict {
     /// List of groupId memberships required to receive the notification.
@@ -35,5 +33,3 @@ impl NotificationRestrict {
         }
     }
 }
-
-

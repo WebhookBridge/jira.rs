@@ -10,8 +10,6 @@
 
 /// PageBeanSecurityLevelMember : A page of items.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageBeanSecurityLevelMember {
     /// Whether this is the last page.
@@ -51,5 +49,3 @@ impl PageBeanSecurityLevelMember {
         }
     }
 }
-
-

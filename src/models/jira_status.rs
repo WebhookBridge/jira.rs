@@ -10,8 +10,6 @@
 
 /// JiraStatus : Details of a status.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraStatus {
     /// The description of the status.
@@ -67,4 +65,3 @@ impl Default for StatusCategory {
         Self::Todo
     }
 }
-

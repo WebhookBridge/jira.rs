@@ -10,8 +10,6 @@
 
 /// JiraExpressionEvaluationMetaDataBeanIssues : Contains information about the `issues` variable in the context. For example, is the issues were loaded with JQL, information about the page will be included here.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionEvaluationMetaDataBeanIssues {
     #[serde(rename = "jql", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct JiraExpressionEvaluationMetaDataBeanIssues {
 impl JiraExpressionEvaluationMetaDataBeanIssues {
     /// Contains information about the `issues` variable in the context. For example, is the issues were loaded with JQL, information about the page will be included here.
     pub fn new() -> JiraExpressionEvaluationMetaDataBeanIssues {
-        JiraExpressionEvaluationMetaDataBeanIssues {
-            jql: None,
-        }
+        JiraExpressionEvaluationMetaDataBeanIssues { jql: None }
     }
 }
-
-

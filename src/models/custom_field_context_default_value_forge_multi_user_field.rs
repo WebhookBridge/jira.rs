@@ -10,8 +10,6 @@
 
 /// CustomFieldContextDefaultValueForgeMultiUserField : Defaults for a Forge collection of users custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContextDefaultValueForgeMultiUserField {
     /// The IDs of the default users.
@@ -26,7 +24,11 @@ pub struct CustomFieldContextDefaultValueForgeMultiUserField {
 
 impl CustomFieldContextDefaultValueForgeMultiUserField {
     /// Defaults for a Forge collection of users custom field.
-    pub fn new(account_ids: Vec<String>, context_id: String, r#type: String) -> CustomFieldContextDefaultValueForgeMultiUserField {
+    pub fn new(
+        account_ids: Vec<String>,
+        context_id: String,
+        r#type: String,
+    ) -> CustomFieldContextDefaultValueForgeMultiUserField {
         CustomFieldContextDefaultValueForgeMultiUserField {
             account_ids,
             context_id,
@@ -34,5 +36,3 @@ impl CustomFieldContextDefaultValueForgeMultiUserField {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// IssueFieldOptionConfiguration : Details of the projects the option is available in.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueFieldOptionConfiguration {
     /// DEPRECATED
@@ -45,4 +43,3 @@ impl Default for Attributes {
         Self::NotSelectable
     }
 }
-

@@ -10,12 +10,15 @@
 
 /// IssueFilterForBulkPropertyDelete : Bulk operation filter details.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueFilterForBulkPropertyDelete {
     /// The value of properties to perform the bulk operation on.
-    #[serde(rename = "currentValue", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "currentValue",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub current_value: Option<Option<serde_json::Value>>,
     /// List of issues to perform the bulk delete operation on.
     #[serde(rename = "entityIds", skip_serializing_if = "Option::is_none")]
@@ -31,5 +34,3 @@ impl IssueFilterForBulkPropertyDelete {
         }
     }
 }
-
-

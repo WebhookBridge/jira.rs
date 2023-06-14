@@ -10,8 +10,6 @@
 
 /// IssueTypeSchemeProjects : Issue type scheme with a list of the projects that use it.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeSchemeProjects {
     #[serde(rename = "issueTypeScheme")]
@@ -23,12 +21,13 @@ pub struct IssueTypeSchemeProjects {
 
 impl IssueTypeSchemeProjects {
     /// Issue type scheme with a list of the projects that use it.
-    pub fn new(issue_type_scheme: crate::models::IssueTypeSchemeProjectsIssueTypeScheme, project_ids: Vec<String>) -> IssueTypeSchemeProjects {
+    pub fn new(
+        issue_type_scheme: crate::models::IssueTypeSchemeProjectsIssueTypeScheme,
+        project_ids: Vec<String>,
+    ) -> IssueTypeSchemeProjects {
         IssueTypeSchemeProjects {
             issue_type_scheme: Box::new(issue_type_scheme),
             project_ids,
         }
     }
 }
-
-

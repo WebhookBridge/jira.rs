@@ -10,8 +10,6 @@
 
 /// CreateNotificationSchemeDetails : Details of an notification scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateNotificationSchemeDetails {
     /// The description of the notification scheme.
@@ -21,7 +19,10 @@ pub struct CreateNotificationSchemeDetails {
     #[serde(rename = "name")]
     pub name: String,
     /// The list of notifications which should be added to the notification scheme.
-    #[serde(rename = "notificationSchemeEvents", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "notificationSchemeEvents",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub notification_scheme_events: Option<Vec<crate::models::NotificationSchemeEventDetails>>,
 }
 
@@ -35,5 +36,3 @@ impl CreateNotificationSchemeDetails {
         }
     }
 }
-
-

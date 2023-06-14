@@ -10,8 +10,6 @@
 
 /// ListOperand : An operand that is a list of values.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ListOperand {
     /// Encoded operand, which can be used directly in a JQL query.
@@ -31,5 +29,3 @@ impl ListOperand {
         }
     }
 }
-
-

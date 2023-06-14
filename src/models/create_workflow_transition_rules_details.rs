@@ -10,8 +10,6 @@
 
 /// CreateWorkflowTransitionRulesDetails : The details of a workflow transition rules.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateWorkflowTransitionRulesDetails {
     #[serde(rename = "conditions", skip_serializing_if = "Option::is_none")]
@@ -34,5 +32,3 @@ impl CreateWorkflowTransitionRulesDetails {
         }
     }
 }
-
-

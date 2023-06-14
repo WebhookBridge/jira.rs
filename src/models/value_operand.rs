@@ -10,8 +10,6 @@
 
 /// ValueOperand : An operand that is a user-provided value.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ValueOperand {
     /// Encoded value, which can be used directly in a JQL query.
@@ -31,5 +29,3 @@ impl ValueOperand {
         }
     }
 }
-
-

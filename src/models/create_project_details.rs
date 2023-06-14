@@ -10,8 +10,6 @@
 
 /// CreateProjectDetails : Details about the project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateProjectDetails {
     /// The default assignee when creating issues for this project.
@@ -27,16 +25,25 @@ pub struct CreateProjectDetails {
     #[serde(rename = "description", skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     /// The ID of the field configuration scheme for the project. Use the [Get all field configuration schemes](#api-rest-api-3-fieldconfigurationscheme-get) operation to get a list of field configuration scheme IDs. If you specify the field configuration scheme you cannot specify the project template key.
-    #[serde(rename = "fieldConfigurationScheme", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fieldConfigurationScheme",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub field_configuration_scheme: Option<i64>,
     /// The ID of the issue security scheme for the project, which enables you to control who can and cannot view issues. Use the [Get issue security schemes](#api-rest-api-3-issuesecurityschemes-get) resource to get all issue security scheme IDs.
-    #[serde(rename = "issueSecurityScheme", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "issueSecurityScheme",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub issue_security_scheme: Option<i64>,
     /// The ID of the issue type scheme for the project. Use the [Get all issue type schemes](#api-rest-api-3-issuetypescheme-get) operation to get a list of issue type scheme IDs. If you specify the issue type scheme you cannot specify the project template key.
     #[serde(rename = "issueTypeScheme", skip_serializing_if = "Option::is_none")]
     pub issue_type_scheme: Option<i64>,
     /// The ID of the issue type screen scheme for the project. Use the [Get all issue type screen schemes](#api-rest-api-3-issuetypescreenscheme-get) operation to get a list of issue type screen scheme IDs. If you specify the issue type screen scheme you cannot specify the project template key.
-    #[serde(rename = "issueTypeScreenScheme", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "issueTypeScreenScheme",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub issue_type_screen_scheme: Option<i64>,
     /// Project keys must be unique and start with an uppercase letter followed by one or more uppercase alphanumeric characters. The maximum length is 10 characters.
     #[serde(rename = "key")]
@@ -159,17 +166,27 @@ pub enum ProjectTemplateKey {
     AtlassianPeriodServicedeskColonSimplifiedBlankProjectIt,
     #[serde(rename = "com.atlassian.servicedesk:simplified-blank-project-business")]
     AtlassianPeriodServicedeskColonSimplifiedBlankProjectBusiness,
-    #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-content-management")]
+    #[serde(
+        rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-content-management"
+    )]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedContentManagement,
-    #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-document-approval")]
+    #[serde(
+        rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-document-approval"
+    )]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedDocumentApproval,
-    #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-lead-tracking")]
+    #[serde(
+        rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-lead-tracking"
+    )]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedLeadTracking,
-    #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-process-control")]
+    #[serde(
+        rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-process-control"
+    )]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedProcessControl,
     #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-procurement")]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedProcurement,
-    #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-project-management")]
+    #[serde(
+        rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-project-management"
+    )]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedProjectManagement,
     #[serde(rename = "com.atlassian.jira-core-project-templates:jira-core-simplified-recruitment")]
     AtlassianPeriodJiraCoreProjectTemplatesColonJiraCoreSimplifiedRecruitment,
@@ -198,4 +215,3 @@ impl Default for ProjectTypeKey {
         Self::Software
     }
 }
-

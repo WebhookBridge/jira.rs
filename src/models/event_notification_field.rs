@@ -10,8 +10,6 @@
 
 /// EventNotificationField : The custom user or group field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct EventNotificationField {
     /// The names that can be used to reference the field in an advanced search. For more information, see [Advanced searching - fields reference](https://confluence.atlassian.com/x/gwORLQ).
@@ -61,5 +59,3 @@ impl EventNotificationField {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// UpdateIssueSecurityLevelDetails : Details of issue security scheme level.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateIssueSecurityLevelDetails {
     /// The description of the issue security scheme level.
@@ -31,5 +29,3 @@ impl UpdateIssueSecurityLevelDetails {
         }
     }
 }
-
-

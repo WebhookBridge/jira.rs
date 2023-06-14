@@ -10,8 +10,6 @@
 
 /// UpdateScreenDetails : Details of a screen.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateScreenDetails {
     /// The description of the screen. The maximum length is 255 characters.
@@ -31,5 +29,3 @@ impl UpdateScreenDetails {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// StatusUpdateRequest : The list of statuses that will be updated.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusUpdateRequest {
     /// The list of statuses that will be updated.
@@ -22,10 +20,6 @@ pub struct StatusUpdateRequest {
 impl StatusUpdateRequest {
     /// The list of statuses that will be updated.
     pub fn new() -> StatusUpdateRequest {
-        StatusUpdateRequest {
-            statuses: None,
-        }
+        StatusUpdateRequest { statuses: None }
     }
 }
-
-

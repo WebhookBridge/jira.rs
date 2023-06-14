@@ -10,8 +10,6 @@
 
 /// ProjectRoleDetails : Details about a project role.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectRoleDetails {
     /// Whether this role is the admin role for the project.
@@ -58,5 +56,3 @@ impl ProjectRoleDetails {
         }
     }
 }
-
-

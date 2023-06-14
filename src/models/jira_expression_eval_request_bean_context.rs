@@ -10,8 +10,6 @@
 
 /// JiraExpressionEvalRequestBeanContext : The context in which the Jira expression is evaluated.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionEvalRequestBeanContext {
     /// The ID of the board that is available under the `board` variable when evaluating the expression.
@@ -52,5 +50,3 @@ impl JiraExpressionEvalRequestBeanContext {
         }
     }
 }
-
-

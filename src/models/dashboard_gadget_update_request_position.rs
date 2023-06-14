@@ -10,8 +10,6 @@
 
 /// DashboardGadgetUpdateRequestPosition : The position of the gadget.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DashboardGadgetUpdateRequestPosition {
     #[serde(rename = "The column position of the gadget.")]
@@ -22,12 +20,13 @@ pub struct DashboardGadgetUpdateRequestPosition {
 
 impl DashboardGadgetUpdateRequestPosition {
     /// The position of the gadget.
-    pub fn new(the_column_position_of_the_gadget_period: i32, the_row_position_of_the_gadget_period: i32) -> DashboardGadgetUpdateRequestPosition {
+    pub fn new(
+        the_column_position_of_the_gadget_period: i32,
+        the_row_position_of_the_gadget_period: i32,
+    ) -> DashboardGadgetUpdateRequestPosition {
         DashboardGadgetUpdateRequestPosition {
             the_column_position_of_the_gadget_period,
             the_row_position_of_the_gadget_period,
         }
     }
 }
-
-

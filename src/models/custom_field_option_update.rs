@@ -10,8 +10,6 @@
 
 /// CustomFieldOptionUpdate : Details of a custom field option for a context.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldOptionUpdate {
     /// Whether the option is disabled.
@@ -35,5 +33,3 @@ impl CustomFieldOptionUpdate {
         }
     }
 }
-
-

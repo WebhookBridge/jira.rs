@@ -10,8 +10,6 @@
 
 /// UpdateCustomFieldDetails : Details of a custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateCustomFieldDetails {
     /// The description of the custom field. The maximum length is 40000 characters.
@@ -72,4 +70,3 @@ impl Default for SearcherKey {
         Self::Cascadingselectsearcher
     }
 }
-

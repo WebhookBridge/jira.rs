@@ -10,13 +10,15 @@
 
 /// AssociateSecuritySchemeWithProjectDetails : Issue security scheme, project, and remapping details.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AssociateSecuritySchemeWithProjectDetails {
     /// The list of scheme levels which should be remapped to new levels of the issue security scheme.
-    #[serde(rename = "oldToNewSecurityLevelMappings", skip_serializing_if = "Option::is_none")]
-    pub old_to_new_security_level_mappings: Option<Vec<crate::models::OldToNewSecurityLevelMappingsBean>>,
+    #[serde(
+        rename = "oldToNewSecurityLevelMappings",
+        skip_serializing_if = "Option::is_none"
+    )]
+    pub old_to_new_security_level_mappings:
+        Option<Vec<crate::models::OldToNewSecurityLevelMappingsBean>>,
     /// The ID of the project.
     #[serde(rename = "projectId")]
     pub project_id: String,
@@ -35,5 +37,3 @@ impl AssociateSecuritySchemeWithProjectDetails {
         }
     }
 }
-
-

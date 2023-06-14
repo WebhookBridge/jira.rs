@@ -10,8 +10,6 @@
 
 /// TimeTrackingConfiguration : Details of the time tracking configuration.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct TimeTrackingConfiguration {
     /// The default unit of time applied to logged time.
@@ -30,7 +28,12 @@ pub struct TimeTrackingConfiguration {
 
 impl TimeTrackingConfiguration {
     /// Details of the time tracking configuration.
-    pub fn new(default_unit: DefaultUnit, time_format: TimeFormat, working_days_per_week: f64, working_hours_per_day: f64) -> TimeTrackingConfiguration {
+    pub fn new(
+        default_unit: DefaultUnit,
+        time_format: TimeFormat,
+        working_days_per_week: f64,
+        working_hours_per_day: f64,
+    ) -> TimeTrackingConfiguration {
         TimeTrackingConfiguration {
             default_unit,
             time_format,
@@ -74,4 +77,3 @@ impl Default for TimeFormat {
         Self::Pretty
     }
 }
-

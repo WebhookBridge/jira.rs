@@ -10,8 +10,6 @@
 
 /// NotificationSchemeEventDetails : Details of a notification scheme event.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationSchemeEventDetails {
     #[serde(rename = "event")]
@@ -23,12 +21,13 @@ pub struct NotificationSchemeEventDetails {
 
 impl NotificationSchemeEventDetails {
     /// Details of a notification scheme event.
-    pub fn new(event: crate::models::NotificationSchemeEventDetailsEvent, notifications: Vec<crate::models::NotificationSchemeNotificationDetails>) -> NotificationSchemeEventDetails {
+    pub fn new(
+        event: crate::models::NotificationSchemeEventDetailsEvent,
+        notifications: Vec<crate::models::NotificationSchemeNotificationDetails>,
+    ) -> NotificationSchemeEventDetails {
         NotificationSchemeEventDetails {
             event: Box::new(event),
             notifications,
         }
     }
 }
-
-

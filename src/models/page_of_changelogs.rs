@@ -10,8 +10,6 @@
 
 /// PageOfChangelogs : A page of changelogs.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageOfChangelogs {
     /// The list of changelogs.
@@ -39,5 +37,3 @@ impl PageOfChangelogs {
         }
     }
 }
-
-

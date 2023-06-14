@@ -10,8 +10,6 @@
 
 /// AutoCompleteSuggestion : A field auto-complete suggestion.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AutoCompleteSuggestion {
     /// The display name of a suggested item. If `fieldValue` or `predicateValue` are provided, the matching text is highlighted with the HTML bold tag.
@@ -31,5 +29,3 @@ impl AutoCompleteSuggestion {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// Changelog : A log of changes made to issue fields. Changelogs related to workflow associations are currently being deprecated.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Changelog {
     #[serde(rename = "author", skip_serializing_if = "Option::is_none")]
@@ -41,5 +39,3 @@ impl Changelog {
         }
     }
 }
-
-

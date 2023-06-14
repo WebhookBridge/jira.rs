@@ -10,8 +10,6 @@
 
 /// NotificationSchemeEventTypeId : The ID of an event that is being mapped to notifications.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationSchemeEventTypeId {
     /// The ID of the notification scheme event.
@@ -22,10 +20,6 @@ pub struct NotificationSchemeEventTypeId {
 impl NotificationSchemeEventTypeId {
     /// The ID of an event that is being mapped to notifications.
     pub fn new(id: String) -> NotificationSchemeEventTypeId {
-        NotificationSchemeEventTypeId {
-            id,
-        }
+        NotificationSchemeEventTypeId { id }
     }
 }
-
-

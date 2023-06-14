@@ -10,8 +10,6 @@
 
 /// CustomFieldContextDefaultValueForgeNumberField : Default value for a Forge number custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContextDefaultValueForgeNumberField {
     /// The ID of the context.
@@ -26,7 +24,11 @@ pub struct CustomFieldContextDefaultValueForgeNumberField {
 
 impl CustomFieldContextDefaultValueForgeNumberField {
     /// Default value for a Forge number custom field.
-    pub fn new(context_id: String, number: f64, r#type: String) -> CustomFieldContextDefaultValueForgeNumberField {
+    pub fn new(
+        context_id: String,
+        number: f64,
+        r#type: String,
+    ) -> CustomFieldContextDefaultValueForgeNumberField {
         CustomFieldContextDefaultValueForgeNumberField {
             context_id,
             number,
@@ -34,5 +36,3 @@ impl CustomFieldContextDefaultValueForgeNumberField {
         }
     }
 }
-
-

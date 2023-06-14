@@ -10,8 +10,6 @@
 
 /// ParsedJqlQueryStructure : The syntax tree of the query. Empty if the query was invalid.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ParsedJqlQueryStructure {
     #[serde(rename = "orderBy", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl ParsedJqlQueryStructure {
         }
     }
 }
-
-

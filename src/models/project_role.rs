@@ -10,8 +10,6 @@
 
 /// ProjectRole : Details about the roles in a project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectRole {
     /// The list of users who act in this role.
@@ -66,5 +64,3 @@ impl ProjectRole {
         }
     }
 }
-
-

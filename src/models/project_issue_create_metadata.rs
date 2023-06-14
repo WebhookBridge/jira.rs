@@ -10,8 +10,6 @@
 
 /// ProjectIssueCreateMetadata : Details of the issue creation metadata for a project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectIssueCreateMetadata {
     #[serde(rename = "avatarUrls", skip_serializing_if = "Option::is_none")]
@@ -50,5 +48,3 @@ impl ProjectIssueCreateMetadata {
         }
     }
 }
-
-

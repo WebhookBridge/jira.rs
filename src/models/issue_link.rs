@@ -10,8 +10,6 @@
 
 /// IssueLink : Details of a link between issues.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueLink {
     /// The ID of the issue link.
@@ -30,7 +28,11 @@ pub struct IssueLink {
 
 impl IssueLink {
     /// Details of a link between issues.
-    pub fn new(inward_issue: crate::models::IssueLinkInwardIssue, outward_issue: crate::models::IssueLinkOutwardIssue, r#type: crate::models::IssueLinkType) -> IssueLink {
+    pub fn new(
+        inward_issue: crate::models::IssueLinkInwardIssue,
+        outward_issue: crate::models::IssueLinkOutwardIssue,
+        r#type: crate::models::IssueLinkType,
+    ) -> IssueLink {
         IssueLink {
             id: None,
             inward_issue: Box::new(inward_issue),
@@ -40,5 +42,3 @@ impl IssueLink {
         }
     }
 }
-
-

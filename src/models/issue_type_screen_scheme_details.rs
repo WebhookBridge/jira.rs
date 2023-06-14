@@ -10,8 +10,6 @@
 
 /// IssueTypeScreenSchemeDetails : The details of an issue type screen scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeScreenSchemeDetails {
     /// The description of the issue type screen scheme. The maximum length is 255 characters.
@@ -27,7 +25,10 @@ pub struct IssueTypeScreenSchemeDetails {
 
 impl IssueTypeScreenSchemeDetails {
     /// The details of an issue type screen scheme.
-    pub fn new(issue_type_mappings: Vec<crate::models::IssueTypeScreenSchemeMapping>, name: String) -> IssueTypeScreenSchemeDetails {
+    pub fn new(
+        issue_type_mappings: Vec<crate::models::IssueTypeScreenSchemeMapping>,
+        name: String,
+    ) -> IssueTypeScreenSchemeDetails {
         IssueTypeScreenSchemeDetails {
             description: None,
             issue_type_mappings,
@@ -35,5 +36,3 @@ impl IssueTypeScreenSchemeDetails {
         }
     }
 }
-
-

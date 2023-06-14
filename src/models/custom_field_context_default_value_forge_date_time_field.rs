@@ -10,8 +10,6 @@
 
 /// CustomFieldContextDefaultValueForgeDateTimeField : The default value for a Forge date time custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContextDefaultValueForgeDateTimeField {
     /// The ID of the context.
@@ -29,7 +27,10 @@ pub struct CustomFieldContextDefaultValueForgeDateTimeField {
 
 impl CustomFieldContextDefaultValueForgeDateTimeField {
     /// The default value for a Forge date time custom field.
-    pub fn new(context_id: String, r#type: String) -> CustomFieldContextDefaultValueForgeDateTimeField {
+    pub fn new(
+        context_id: String,
+        r#type: String,
+    ) -> CustomFieldContextDefaultValueForgeDateTimeField {
         CustomFieldContextDefaultValueForgeDateTimeField {
             context_id,
             date_time: None,
@@ -38,5 +39,3 @@ impl CustomFieldContextDefaultValueForgeDateTimeField {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// Avatars : Details about system and custom avatars.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Avatars {
     /// Custom avatars list.
@@ -31,5 +29,3 @@ impl Avatars {
         }
     }
 }
-
-

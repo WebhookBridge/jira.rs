@@ -10,8 +10,6 @@
 
 /// WorkflowUsages : The workflows that use this status. Only available if the `workflowUsages` expand is requested.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorkflowUsages {
     /// Workflow ID.
@@ -31,5 +29,3 @@ impl WorkflowUsages {
         }
     }
 }
-
-

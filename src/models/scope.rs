@@ -10,8 +10,6 @@
 
 /// Scope : The projects the item is associated with. Indicated for items associated with [next-gen projects](https://confluence.atlassian.com/x/loMyO).
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Scope {
     #[serde(rename = "project", skip_serializing_if = "Option::is_none")]
@@ -45,4 +43,3 @@ impl Default for RHashType {
         Self::Project
     }
 }
-

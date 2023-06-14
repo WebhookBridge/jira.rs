@@ -10,8 +10,6 @@
 
 /// UpdateNotificationSchemeDetails : Details of a notification scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateNotificationSchemeDetails {
     /// The description of the notification scheme.
@@ -31,5 +29,3 @@ impl UpdateNotificationSchemeDetails {
         }
     }
 }
-
-

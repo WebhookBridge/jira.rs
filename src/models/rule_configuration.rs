@@ -10,8 +10,6 @@
 
 /// RuleConfiguration : A rule configuration.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RuleConfiguration {
     /// EXPERIMENTAL: Whether the rule is disabled.
@@ -35,5 +33,3 @@ impl RuleConfiguration {
         }
     }
 }
-
-

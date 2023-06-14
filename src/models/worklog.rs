@@ -10,14 +10,17 @@
 
 /// Worklog : Details of a worklog.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Worklog {
     #[serde(rename = "author", skip_serializing_if = "Option::is_none")]
     pub author: Option<Box<crate::models::WorklogAuthor>>,
     /// A comment about the worklog in [Atlassian Document Format](https://developer.atlassian.com/cloud/jira/platform/apis/document/structure/). Optional when creating or updating a worklog.
-    #[serde(rename = "comment", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "comment",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub comment: Option<Option<serde_json::Value>>,
     /// The datetime on which the worklog was created.
     #[serde(rename = "created", skip_serializing_if = "Option::is_none")]
@@ -72,5 +75,3 @@ impl Worklog {
         }
     }
 }
-
-

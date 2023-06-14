@@ -10,12 +10,13 @@
 
 /// SecurityScheme : Details about a security scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecurityScheme {
     /// The ID of the default security level.
-    #[serde(rename = "defaultSecurityLevelId", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "defaultSecurityLevelId",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub default_security_level_id: Option<i64>,
     /// The description of the issue security scheme.
     #[serde(rename = "description", skip_serializing_if = "Option::is_none")]
@@ -46,5 +47,3 @@ impl SecurityScheme {
         }
     }
 }
-
-

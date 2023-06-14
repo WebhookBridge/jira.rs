@@ -10,8 +10,6 @@
 
 /// NotificationEvent : Details about a notification event.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationEvent {
     /// The description of the event.
@@ -38,5 +36,3 @@ impl NotificationEvent {
         }
     }
 }
-
-

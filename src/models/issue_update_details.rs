@@ -10,8 +10,6 @@
 
 /// IssueUpdateDetails : Details of an issue update request.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueUpdateDetails {
     /// List of issue screen fields to update, specifying the sub-field to update and its value for each field. This field provides a straightforward option when setting a sub-field. When multiple sub-fields or other operations are required, use `update`. Fields included in here cannot be included in `update`.
@@ -26,7 +24,8 @@ pub struct IssueUpdateDetails {
     pub transition: Option<Box<crate::models::IssueUpdateDetailsTransition>>,
     /// A Map containing the field field name and a list of operations to perform on the issue screen field. Note that fields included in here cannot be included in `fields`.
     #[serde(rename = "update", skip_serializing_if = "Option::is_none")]
-    pub update: Option<::std::collections::HashMap<String, Vec<crate::models::FieldUpdateOperation>>>,
+    pub update:
+        Option<::std::collections::HashMap<String, Vec<crate::models::FieldUpdateOperation>>>,
 }
 
 impl IssueUpdateDetails {
@@ -41,5 +40,3 @@ impl IssueUpdateDetails {
         }
     }
 }
-
-

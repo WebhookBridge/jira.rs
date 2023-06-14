@@ -10,8 +10,6 @@
 
 /// IssueTransitionTo : Details of the issue status after the transition.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTransitionTo {
     /// The description of the status.
@@ -46,5 +44,3 @@ impl IssueTransitionTo {
         }
     }
 }
-
-

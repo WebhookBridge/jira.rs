@@ -10,8 +10,6 @@
 
 /// JiraExpressionsComplexityBeanSteps : The number of steps it took to evaluate the expression, where a step is a high-level operation performed by the expression. A step is an operation such as arithmetic, accessing a property, accessing a context variable, or calling a function.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionsComplexityBeanSteps {
     /// The maximum allowed complexity. The evaluation will fail if this value is exceeded.
@@ -25,11 +23,6 @@ pub struct JiraExpressionsComplexityBeanSteps {
 impl JiraExpressionsComplexityBeanSteps {
     /// The number of steps it took to evaluate the expression, where a step is a high-level operation performed by the expression. A step is an operation such as arithmetic, accessing a property, accessing a context variable, or calling a function.
     pub fn new(limit: i32, value: i32) -> JiraExpressionsComplexityBeanSteps {
-        JiraExpressionsComplexityBeanSteps {
-            limit,
-            value,
-        }
+        JiraExpressionsComplexityBeanSteps { limit, value }
     }
 }
-
-

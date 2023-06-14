@@ -10,8 +10,6 @@
 
 /// ResolutionId : The ID of an issue resolution.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ResolutionId {
     /// The ID of the issue resolution.
@@ -22,10 +20,6 @@ pub struct ResolutionId {
 impl ResolutionId {
     /// The ID of an issue resolution.
     pub fn new(id: String) -> ResolutionId {
-        ResolutionId {
-            id,
-        }
+        ResolutionId { id }
     }
 }
-
-

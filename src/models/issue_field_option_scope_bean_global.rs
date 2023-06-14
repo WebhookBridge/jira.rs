@@ -10,8 +10,6 @@
 
 /// IssueFieldOptionScopeBeanGlobal : Defines the behavior of the option within the global context. If this property is set, even if set to an empty object, then the option is available in all projects.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueFieldOptionScopeBeanGlobal {
     /// Defines the behavior of the option in the global context.If notSelectable is set, the option cannot be set as the field's value. This is useful for archiving an option that has previously been selected but shouldn't be used anymore.If defaultValue is set, the option is selected by default.
@@ -22,9 +20,7 @@ pub struct IssueFieldOptionScopeBeanGlobal {
 impl IssueFieldOptionScopeBeanGlobal {
     /// Defines the behavior of the option within the global context. If this property is set, even if set to an empty object, then the option is available in all projects.
     pub fn new() -> IssueFieldOptionScopeBeanGlobal {
-        IssueFieldOptionScopeBeanGlobal {
-            attributes: None,
-        }
+        IssueFieldOptionScopeBeanGlobal { attributes: None }
     }
 }
 
@@ -42,4 +38,3 @@ impl Default for Attributes {
         Self::NotSelectable
     }
 }
-

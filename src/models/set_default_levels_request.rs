@@ -10,8 +10,6 @@
 
 /// SetDefaultLevelsRequest : Details of new default levels.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SetDefaultLevelsRequest {
     /// List of objects with issue security scheme ID and new default level ID.
@@ -22,10 +20,6 @@ pub struct SetDefaultLevelsRequest {
 impl SetDefaultLevelsRequest {
     /// Details of new default levels.
     pub fn new(default_values: Vec<crate::models::DefaultLevelValue>) -> SetDefaultLevelsRequest {
-        SetDefaultLevelsRequest {
-            default_values,
-        }
+        SetDefaultLevelsRequest { default_values }
     }
 }
-
-

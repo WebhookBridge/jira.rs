@@ -10,8 +10,6 @@
 
 /// FieldDetailsSchema : The data schema for the field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldDetailsSchema {
     /// If the field is a custom field, the configuration of the field.
@@ -47,5 +45,3 @@ impl FieldDetailsSchema {
         }
     }
 }
-
-

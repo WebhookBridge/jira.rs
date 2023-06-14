@@ -10,8 +10,6 @@
 
 /// AuditRecordBean : An audit record.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AuditRecordBean {
     /// The list of items associated with the changed record.
@@ -66,5 +64,3 @@ impl AuditRecordBean {
         }
     }
 }
-
-

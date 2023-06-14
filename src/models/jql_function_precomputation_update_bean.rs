@@ -10,8 +10,6 @@
 
 /// JqlFunctionPrecomputationUpdateBean : Precomputation id and its new value.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlFunctionPrecomputationUpdateBean {
     #[serde(rename = "id")]
@@ -23,11 +21,6 @@ pub struct JqlFunctionPrecomputationUpdateBean {
 impl JqlFunctionPrecomputationUpdateBean {
     /// Precomputation id and its new value.
     pub fn new(id: i64, value: String) -> JqlFunctionPrecomputationUpdateBean {
-        JqlFunctionPrecomputationUpdateBean {
-            id,
-            value,
-        }
+        JqlFunctionPrecomputationUpdateBean { id, value }
     }
 }
-
-

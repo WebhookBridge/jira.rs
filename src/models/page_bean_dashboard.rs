@@ -10,8 +10,6 @@
 
 /// PageBeanDashboard : A page of items.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageBeanDashboard {
     /// Whether this is the last page.
@@ -51,5 +49,3 @@ impl PageBeanDashboard {
         }
     }
 }
-
-

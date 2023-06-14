@@ -10,8 +10,6 @@
 
 /// ScreenSchemeDetailsScreens : The IDs of the screens for the screen types of the screen scheme. Only screens used in classic projects are accepted.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ScreenSchemeDetailsScreens {
     /// The ID of the create screen.
@@ -39,5 +37,3 @@ impl ScreenSchemeDetailsScreens {
         }
     }
 }
-
-

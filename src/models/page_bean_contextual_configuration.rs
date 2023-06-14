@@ -10,8 +10,6 @@
 
 /// PageBeanContextualConfiguration : A page of items.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageBeanContextualConfiguration {
     /// Whether this is the last page.
@@ -51,5 +49,3 @@ impl PageBeanContextualConfiguration {
         }
     }
 }
-
-

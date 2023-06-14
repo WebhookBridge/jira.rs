@@ -10,8 +10,6 @@
 
 /// ReorderIssueResolutionsRequest : Change the order of issue resolutions.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ReorderIssueResolutionsRequest {
     /// The ID of the resolution. Required if `position` isn't provided.
@@ -35,5 +33,3 @@ impl ReorderIssueResolutionsRequest {
         }
     }
 }
-
-

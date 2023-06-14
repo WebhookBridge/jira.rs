@@ -10,8 +10,6 @@
 
 /// EventNotification : Details about a notification associated with an event.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct EventNotification {
     /// The email address.
@@ -94,4 +92,3 @@ impl Default for NotificationType {
         Self::CurrentAssignee
     }
 }
-

@@ -10,8 +10,6 @@
 
 /// JqlQueryOrderByClauseElement : An element of the order-by JQL clause.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlQueryOrderByClauseElement {
     /// The direction in which to order the results.
@@ -45,4 +43,3 @@ impl Default for Direction {
         Self::Asc
     }
 }
-

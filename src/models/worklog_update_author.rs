@@ -10,8 +10,6 @@
 
 /// WorklogUpdateAuthor : Details of the user who last updated the worklog.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorklogUpdateAuthor {
     /// The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*.
@@ -62,5 +60,3 @@ impl WorklogUpdateAuthor {
         }
     }
 }
-
-

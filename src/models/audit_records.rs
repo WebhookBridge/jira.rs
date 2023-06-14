@@ -10,8 +10,6 @@
 
 /// AuditRecords : Container for a list of audit records.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AuditRecords {
     /// The requested or default limit on the number of audit items to be returned.
@@ -39,5 +37,3 @@ impl AuditRecords {
         }
     }
 }
-
-

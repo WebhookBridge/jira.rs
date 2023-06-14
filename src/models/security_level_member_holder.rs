@@ -10,8 +10,6 @@
 
 /// SecurityLevelMemberHolder : The user or group being granted the permission. It consists of a `type` and a type-dependent `parameter`. See [Holder object](../api-group-permission-schemes/#holder-object) in *Get all permission schemes* for more information.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecurityLevelMemberHolder {
     /// Expand options that include additional permission holder details in the response.
@@ -39,5 +37,3 @@ impl SecurityLevelMemberHolder {
         }
     }
 }
-
-

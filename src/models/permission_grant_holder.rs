@@ -10,8 +10,6 @@
 
 /// PermissionGrantHolder : The user or group being granted the permission. It consists of a `type`, a type-dependent `parameter` and a type-dependent `value`. See [Holder object](../api-group-permission-schemes/#holder-object) in *Get all permission schemes* for more information.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PermissionGrantHolder {
     /// Expand options that include additional permission holder details in the response.
@@ -39,5 +37,3 @@ impl PermissionGrantHolder {
         }
     }
 }
-
-

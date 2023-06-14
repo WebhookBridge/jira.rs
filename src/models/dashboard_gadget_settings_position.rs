@@ -10,8 +10,6 @@
 
 /// DashboardGadgetSettingsPosition : The position of the gadget. When the gadget is placed into the position, other gadgets in the same column are moved down to accommodate it.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DashboardGadgetSettingsPosition {
     #[serde(rename = "The column position of the gadget.")]
@@ -22,12 +20,13 @@ pub struct DashboardGadgetSettingsPosition {
 
 impl DashboardGadgetSettingsPosition {
     /// The position of the gadget. When the gadget is placed into the position, other gadgets in the same column are moved down to accommodate it.
-    pub fn new(the_column_position_of_the_gadget_period: i32, the_row_position_of_the_gadget_period: i32) -> DashboardGadgetSettingsPosition {
+    pub fn new(
+        the_column_position_of_the_gadget_period: i32,
+        the_row_position_of_the_gadget_period: i32,
+    ) -> DashboardGadgetSettingsPosition {
         DashboardGadgetSettingsPosition {
             the_column_position_of_the_gadget_period,
             the_row_position_of_the_gadget_period,
         }
     }
 }
-
-

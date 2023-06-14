@@ -10,8 +10,6 @@
 
 /// ProjectRoleGroup : Details of the group associated with the role.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectRoleGroup {
     /// The display name of the group.
@@ -35,5 +33,3 @@ impl ProjectRoleGroup {
         }
     }
 }
-
-

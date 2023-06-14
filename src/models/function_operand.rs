@@ -10,8 +10,6 @@
 
 /// FunctionOperand : An operand that is a function. See [Advanced searching - functions reference](https://confluence.atlassian.com/x/dwiiLQ) for more information about JQL functions.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FunctionOperand {
     /// The list of function arguments.
@@ -35,5 +33,3 @@ impl FunctionOperand {
         }
     }
 }
-
-

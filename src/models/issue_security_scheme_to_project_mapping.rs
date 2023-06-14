@@ -10,11 +10,12 @@
 
 /// IssueSecuritySchemeToProjectMapping : Details about an project using security scheme mapping.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueSecuritySchemeToProjectMapping {
-    #[serde(rename = "issueSecuritySchemeId", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "issueSecuritySchemeId",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub issue_security_scheme_id: Option<String>,
     #[serde(rename = "projectId", skip_serializing_if = "Option::is_none")]
     pub project_id: Option<String>,
@@ -29,5 +30,3 @@ impl IssueSecuritySchemeToProjectMapping {
         }
     }
 }
-
-

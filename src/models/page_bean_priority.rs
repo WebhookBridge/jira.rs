@@ -10,8 +10,6 @@
 
 /// PageBeanPriority : A page of items.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageBeanPriority {
     /// Whether this is the last page.
@@ -51,5 +49,3 @@ impl PageBeanPriority {
         }
     }
 }
-
-

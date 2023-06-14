@@ -10,8 +10,6 @@
 
 /// JqlFunctionPrecomputationUpdateRequestBean : List of pairs (id and value) for precomputation updates.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlFunctionPrecomputationUpdateRequestBean {
     #[serde(rename = "values", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct JqlFunctionPrecomputationUpdateRequestBean {
 impl JqlFunctionPrecomputationUpdateRequestBean {
     /// List of pairs (id and value) for precomputation updates.
     pub fn new() -> JqlFunctionPrecomputationUpdateRequestBean {
-        JqlFunctionPrecomputationUpdateRequestBean {
-            values: None,
-        }
+        JqlFunctionPrecomputationUpdateRequestBean { values: None }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// IssuesJqlMetaDataBean : The description of the page of issues loaded by the provided JQL query.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssuesJqlMetaDataBean {
     /// The number of issues that were loaded in this evaluation.
@@ -33,7 +31,12 @@ pub struct IssuesJqlMetaDataBean {
 
 impl IssuesJqlMetaDataBean {
     /// The description of the page of issues loaded by the provided JQL query.
-    pub fn new(count: i32, max_results: i32, start_at: i64, total_count: i64) -> IssuesJqlMetaDataBean {
+    pub fn new(
+        count: i32,
+        max_results: i32,
+        start_at: i64,
+        total_count: i64,
+    ) -> IssuesJqlMetaDataBean {
         IssuesJqlMetaDataBean {
             count,
             max_results,
@@ -43,5 +46,3 @@ impl IssuesJqlMetaDataBean {
         }
     }
 }
-
-

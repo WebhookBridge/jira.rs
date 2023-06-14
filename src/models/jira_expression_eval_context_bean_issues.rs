@@ -10,8 +10,6 @@
 
 /// JiraExpressionEvalContextBeanIssues : The collection of issues that is available under the `issues` variable when evaluating the expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionEvalContextBeanIssues {
     #[serde(rename = "jql", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct JiraExpressionEvalContextBeanIssues {
 impl JiraExpressionEvalContextBeanIssues {
     /// The collection of issues that is available under the `issues` variable when evaluating the expression.
     pub fn new() -> JiraExpressionEvalContextBeanIssues {
-        JiraExpressionEvalContextBeanIssues {
-            jql: None,
-        }
+        JiraExpressionEvalContextBeanIssues { jql: None }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// SecurityLevelMember : Issue security level member.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecurityLevelMember {
     #[serde(rename = "holder")]
@@ -29,7 +27,12 @@ pub struct SecurityLevelMember {
 
 impl SecurityLevelMember {
     /// Issue security level member.
-    pub fn new(holder: crate::models::SecurityLevelMemberHolder, id: String, issue_security_level_id: String, issue_security_scheme_id: String) -> SecurityLevelMember {
+    pub fn new(
+        holder: crate::models::SecurityLevelMemberHolder,
+        id: String,
+        issue_security_level_id: String,
+        issue_security_scheme_id: String,
+    ) -> SecurityLevelMember {
         SecurityLevelMember {
             holder: Box::new(holder),
             id,
@@ -38,5 +41,3 @@ impl SecurityLevelMember {
         }
     }
 }
-
-

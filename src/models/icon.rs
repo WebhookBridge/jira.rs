@@ -10,8 +10,6 @@
 
 /// Icon : An icon. If no icon is defined:   *  for a status icon, no status icon displays in Jira.  *  for the remote object icon, the default link icon displays in Jira.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Icon {
     /// The URL of the tooltip, used only for a status icon. If not set, the status icon in Jira is not clickable.
@@ -35,5 +33,3 @@ impl Icon {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// StatusDetailsStatusCategory : The category assigned to the status.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusDetailsStatusCategory {
     /// The name of the color used to represent the status category.
@@ -43,5 +41,3 @@ impl StatusDetailsStatusCategory {
         }
     }
 }
-
-

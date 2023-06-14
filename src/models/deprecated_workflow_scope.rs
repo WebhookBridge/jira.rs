@@ -10,8 +10,6 @@
 
 /// DeprecatedWorkflowScope : The scope where this workflow applies
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DeprecatedWorkflowScope {
     #[serde(rename = "project", skip_serializing_if = "Option::is_none")]
@@ -45,4 +43,3 @@ impl Default for RHashType {
         Self::Project
     }
 }
-

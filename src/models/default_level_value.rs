@@ -10,8 +10,6 @@
 
 /// DefaultLevelValue : Details of scheme and new default level.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DefaultLevelValue {
     /// The ID of the issue security level to set as default for the specified scheme. Providing null will reset the default level.
@@ -31,5 +29,3 @@ impl DefaultLevelValue {
         }
     }
 }
-
-

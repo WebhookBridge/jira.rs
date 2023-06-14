@@ -10,11 +10,10 @@
 
 /// WorkflowCondition : The workflow transition rule conditions tree.
 
-
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(tag = "node_type")]
 pub enum WorkflowCondition {
-    #[serde(rename="compound")]
+    #[serde(rename = "compound")]
     WorkflowCompoundCondition {
         /// The list of workflow conditions.
         #[serde(rename = "conditions")]
@@ -23,7 +22,7 @@ pub enum WorkflowCondition {
         #[serde(rename = "operator")]
         operator: Operator,
     },
-    #[serde(rename="simple")]
+    #[serde(rename = "simple")]
     WorkflowSimpleCondition {
         /// EXPERIMENTAL. The configuration of the transition rule.
         #[serde(rename = "configuration", skip_serializing_if = "Option::is_none")]
@@ -33,8 +32,6 @@ pub enum WorkflowCondition {
         r#type: String,
     },
 }
-
-
 
 /// The compound condition operator.
 #[derive(Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd, Hash, Serialize, Deserialize)]
@@ -50,4 +47,3 @@ impl Default for Operator {
         Self::And
     }
 }
-

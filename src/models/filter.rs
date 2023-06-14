@@ -10,8 +10,6 @@
 
 /// Filter : Details about a filter.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Filter {
     /// A description of the filter.
@@ -76,5 +74,3 @@ impl Filter {
         }
     }
 }
-
-

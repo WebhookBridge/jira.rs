@@ -10,8 +10,6 @@
 
 /// UserApplicationRoles : The application roles the user is assigned to.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UserApplicationRoles {
     #[serde(rename = "callback", skip_serializing_if = "Option::is_none")]
@@ -38,5 +36,3 @@ impl UserApplicationRoles {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// UserBeanAvatarUrls : The avatars of the user.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UserBeanAvatarUrls {
     /// The URL of the user's 16x16 pixel avatar.
@@ -39,5 +37,3 @@ impl UserBeanAvatarUrls {
         }
     }
 }
-
-

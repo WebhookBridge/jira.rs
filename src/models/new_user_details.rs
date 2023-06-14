@@ -10,8 +10,6 @@
 
 /// NewUserDetails : The user details.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NewUserDetails {
     /// Deprecated, do not use.
@@ -55,5 +53,3 @@ impl NewUserDetails {
         }
     }
 }
-
-

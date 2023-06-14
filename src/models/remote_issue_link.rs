@@ -10,8 +10,6 @@
 
 /// RemoteIssueLink : Details of an issue remote link.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RemoteIssueLink {
     #[serde(rename = "application", skip_serializing_if = "Option::is_none")]
@@ -45,5 +43,3 @@ impl RemoteIssueLink {
         }
     }
 }
-
-

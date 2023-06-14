@@ -10,8 +10,6 @@
 
 /// SharePermission : Details of a share permission for the filter.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SharePermission {
     #[serde(rename = "group", skip_serializing_if = "Option::is_none")]
@@ -70,4 +68,3 @@ impl Default for RHashType {
         Self::User
     }
 }
-

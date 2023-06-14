@@ -10,8 +10,6 @@
 
 /// LicenseMetric : A license metric
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct LicenseMetric {
     /// The key of the license metric.
@@ -31,5 +29,3 @@ impl LicenseMetric {
         }
     }
 }
-
-

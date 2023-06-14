@@ -10,8 +10,6 @@
 
 /// LinkedIssueFields : The fields associated with the issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct LinkedIssueFields {
     #[serde(rename = "assignee", skip_serializing_if = "Option::is_none")]
@@ -45,5 +43,3 @@ impl LinkedIssueFields {
         }
     }
 }
-
-

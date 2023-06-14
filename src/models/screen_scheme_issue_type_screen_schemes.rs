@@ -10,8 +10,6 @@
 
 /// ScreenSchemeIssueTypeScreenSchemes : Details of the issue type screen schemes associated with the screen scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ScreenSchemeIssueTypeScreenSchemes {
     /// Whether this is the last page.
@@ -51,5 +49,3 @@ impl ScreenSchemeIssueTypeScreenSchemes {
         }
     }
 }
-
-

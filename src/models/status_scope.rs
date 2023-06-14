@@ -10,11 +10,14 @@
 
 /// StatusScope : The scope of the status.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusScope {
-    #[serde(rename = "project", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "project",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub project: Option<Option<Box<crate::models::ProjectId>>>,
     /// The scope of the status. `GLOBAL` for company-managed projects and `PROJECT` for team-managed projects.
     #[serde(rename = "type")]
@@ -45,4 +48,3 @@ impl Default for RHashType {
         Self::Project
     }
 }
-

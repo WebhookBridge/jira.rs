@@ -10,8 +10,6 @@
 
 /// SecuritySchemeMembersRequest : Details of issue security scheme level new members.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecuritySchemeMembersRequest {
     /// The list of level members which should be added to the issue security scheme level.
@@ -22,10 +20,6 @@ pub struct SecuritySchemeMembersRequest {
 impl SecuritySchemeMembersRequest {
     /// Details of issue security scheme level new members.
     pub fn new() -> SecuritySchemeMembersRequest {
-        SecuritySchemeMembersRequest {
-            members: None,
-        }
+        SecuritySchemeMembersRequest { members: None }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// DashboardGadgetUpdateRequest : The details of the gadget to update.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DashboardGadgetUpdateRequest {
     /// The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`.
@@ -34,5 +32,3 @@ impl DashboardGadgetUpdateRequest {
         }
     }
 }
-
-

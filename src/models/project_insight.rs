@@ -10,12 +10,13 @@
 
 /// ProjectInsight : Insights about the project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectInsight {
     /// The last issue update time.
-    #[serde(rename = "lastIssueUpdateTime", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "lastIssueUpdateTime",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub last_issue_update_time: Option<String>,
     /// Total issue count.
     #[serde(rename = "totalIssueCount", skip_serializing_if = "Option::is_none")]
@@ -31,5 +32,3 @@ impl ProjectInsight {
         }
     }
 }
-
-

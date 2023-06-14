@@ -10,8 +10,6 @@
 
 /// WorkflowRulesSearch : Details of the workflow and its transition rules.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorkflowRulesSearch {
     /// Use expand to include additional information in the response. This parameter accepts `transition` which, for each rule, returns information about the transition the rule is assigned to.
@@ -35,5 +33,3 @@ impl WorkflowRulesSearch {
         }
     }
 }
-
-

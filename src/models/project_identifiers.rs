@@ -10,8 +10,6 @@
 
 /// ProjectIdentifiers : Identifiers for a project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectIdentifiers {
     /// The ID of the created project.
@@ -35,5 +33,3 @@ impl ProjectIdentifiers {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// Votes : The details of votes on an issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Votes {
     /// Whether the user making this request has voted on the issue.
@@ -39,5 +37,3 @@ impl Votes {
         }
     }
 }
-
-

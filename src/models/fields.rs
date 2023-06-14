@@ -10,8 +10,6 @@
 
 /// Fields : Key fields from the linked issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Fields {
     #[serde(rename = "assignee", skip_serializing_if = "Option::is_none")]
@@ -45,5 +43,3 @@ impl Fields {
         }
     }
 }
-
-

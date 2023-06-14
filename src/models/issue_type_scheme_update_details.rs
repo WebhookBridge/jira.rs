@@ -10,8 +10,6 @@
 
 /// IssueTypeSchemeUpdateDetails : Details of the name, description, and default issue type for an issue type scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeSchemeUpdateDetails {
     /// The ID of the default issue type of the issue type scheme.
@@ -35,5 +33,3 @@ impl IssueTypeSchemeUpdateDetails {
         }
     }
 }
-
-

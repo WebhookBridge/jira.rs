@@ -10,8 +10,6 @@
 
 /// UiModificationDetails : The details of a UI modification.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UiModificationDetails {
     /// List of contexts of the UI modification. The maximum number of contexts is 1000.
@@ -47,5 +45,3 @@ impl UiModificationDetails {
         }
     }
 }
-
-

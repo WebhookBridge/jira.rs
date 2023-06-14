@@ -10,8 +10,6 @@
 
 /// JiraExpressionsComplexityBeanPrimitiveValues : The number of primitive values returned in the response.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionsComplexityBeanPrimitiveValues {
     /// The maximum allowed complexity. The evaluation will fail if this value is exceeded.
@@ -25,11 +23,6 @@ pub struct JiraExpressionsComplexityBeanPrimitiveValues {
 impl JiraExpressionsComplexityBeanPrimitiveValues {
     /// The number of primitive values returned in the response.
     pub fn new(limit: i32, value: i32) -> JiraExpressionsComplexityBeanPrimitiveValues {
-        JiraExpressionsComplexityBeanPrimitiveValues {
-            limit,
-            value,
-        }
+        JiraExpressionsComplexityBeanPrimitiveValues { limit, value }
     }
 }
-
-

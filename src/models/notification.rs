@@ -10,8 +10,6 @@
 
 /// Notification : Details about a notification.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Notification {
     /// The HTML body of the email notification for the issue.
@@ -41,5 +39,3 @@ impl Notification {
         }
     }
 }
-
-

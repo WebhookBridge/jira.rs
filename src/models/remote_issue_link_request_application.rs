@@ -10,8 +10,6 @@
 
 /// RemoteIssueLinkRequestApplication : Details of the remote application the linked item is in. For example, trello.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RemoteIssueLinkRequestApplication {
     /// The name of the application. Used in conjunction with the (remote) object icon title to display a tooltip for the link's icon. The tooltip takes the format \"\\[application name\\] icon title\". Blank items are excluded from the tooltip title. If both items are blank, the icon tooltop displays as \"Web Link\". Grouping and sorting of links may place links without an application name last.
@@ -31,5 +29,3 @@ impl RemoteIssueLinkRequestApplication {
         }
     }
 }
-
-

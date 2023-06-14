@@ -10,8 +10,6 @@
 
 /// AppWorkflowTransitionRule : A workflow transition rule.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AppWorkflowTransitionRule {
     #[serde(rename = "configuration")]
@@ -28,7 +26,11 @@ pub struct AppWorkflowTransitionRule {
 
 impl AppWorkflowTransitionRule {
     /// A workflow transition rule.
-    pub fn new(configuration: crate::models::RuleConfiguration, id: String, key: String) -> AppWorkflowTransitionRule {
+    pub fn new(
+        configuration: crate::models::RuleConfiguration,
+        id: String,
+        key: String,
+    ) -> AppWorkflowTransitionRule {
         AppWorkflowTransitionRule {
             configuration: Box::new(configuration),
             id,
@@ -37,5 +39,3 @@ impl AppWorkflowTransitionRule {
         }
     }
 }
-
-

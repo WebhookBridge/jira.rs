@@ -10,8 +10,6 @@
 
 /// ProjectId : Project ID details.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectId {
     /// The ID of the project.
@@ -22,10 +20,6 @@ pub struct ProjectId {
 impl ProjectId {
     /// Project ID details.
     pub fn new(id: String) -> ProjectId {
-        ProjectId {
-            id,
-        }
+        ProjectId { id }
     }
 }
-
-

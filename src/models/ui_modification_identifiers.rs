@@ -10,8 +10,6 @@
 
 /// UiModificationIdentifiers : Identifiers for a UI modification.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UiModificationIdentifiers {
     /// The ID of the UI modification.
@@ -25,11 +23,6 @@ pub struct UiModificationIdentifiers {
 impl UiModificationIdentifiers {
     /// Identifiers for a UI modification.
     pub fn new(id: String, param_self: String) -> UiModificationIdentifiers {
-        UiModificationIdentifiers {
-            id,
-            param_self,
-        }
+        UiModificationIdentifiers { id, param_self }
     }
 }
-
-

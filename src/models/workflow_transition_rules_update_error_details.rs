@@ -10,8 +10,6 @@
 
 /// WorkflowTransitionRulesUpdateErrorDetails : Details of any errors encountered while updating workflow transition rules for a workflow.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorkflowTransitionRulesUpdateErrorDetails {
     /// A list of transition rule update errors, indexed by the transition rule ID. Any transition rule that appears here wasn't updated.
@@ -26,7 +24,11 @@ pub struct WorkflowTransitionRulesUpdateErrorDetails {
 
 impl WorkflowTransitionRulesUpdateErrorDetails {
     /// Details of any errors encountered while updating workflow transition rules for a workflow.
-    pub fn new(rule_update_errors: ::std::collections::HashMap<String, Vec<String>>, update_errors: Vec<String>, workflow_id: crate::models::WorkflowId) -> WorkflowTransitionRulesUpdateErrorDetails {
+    pub fn new(
+        rule_update_errors: ::std::collections::HashMap<String, Vec<String>>,
+        update_errors: Vec<String>,
+        workflow_id: crate::models::WorkflowId,
+    ) -> WorkflowTransitionRulesUpdateErrorDetails {
         WorkflowTransitionRulesUpdateErrorDetails {
             rule_update_errors,
             update_errors,
@@ -34,5 +36,3 @@ impl WorkflowTransitionRulesUpdateErrorDetails {
         }
     }
 }
-
-

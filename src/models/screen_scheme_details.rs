@@ -10,8 +10,6 @@
 
 /// ScreenSchemeDetails : Details of a screen scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ScreenSchemeDetails {
     /// The description of the screen scheme. The maximum length is 255 characters.
@@ -26,7 +24,10 @@ pub struct ScreenSchemeDetails {
 
 impl ScreenSchemeDetails {
     /// Details of a screen scheme.
-    pub fn new(name: String, screens: crate::models::ScreenSchemeDetailsScreens) -> ScreenSchemeDetails {
+    pub fn new(
+        name: String,
+        screens: crate::models::ScreenSchemeDetailsScreens,
+    ) -> ScreenSchemeDetails {
         ScreenSchemeDetails {
             description: None,
             name,
@@ -34,5 +35,3 @@ impl ScreenSchemeDetails {
         }
     }
 }
-
-

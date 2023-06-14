@@ -10,8 +10,6 @@
 
 /// JiraExpressionAnalysis : Details about the analysed Jira expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionAnalysis {
     #[serde(rename = "complexity", skip_serializing_if = "Option::is_none")]
@@ -42,5 +40,3 @@ impl JiraExpressionAnalysis {
         }
     }
 }
-
-

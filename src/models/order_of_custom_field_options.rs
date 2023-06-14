@@ -10,8 +10,6 @@
 
 /// OrderOfCustomFieldOptions : An ordered list of custom field option IDs and information on where to move them.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct OrderOfCustomFieldOptions {
     /// The ID of the custom field option or cascading option to place the moved options after. Required if `position` isn't provided.
@@ -50,4 +48,3 @@ impl Default for Position {
         Self::First
     }
 }
-

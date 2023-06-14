@@ -10,8 +10,6 @@
 
 /// IssueTypeScreenSchemesProjectsIssueTypeScreenScheme : Details of an issue type screen scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeScreenSchemesProjectsIssueTypeScreenScheme {
     /// The description of the issue type screen scheme.
@@ -35,5 +33,3 @@ impl IssueTypeScreenSchemesProjectsIssueTypeScreenScheme {
         }
     }
 }
-
-

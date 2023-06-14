@@ -10,8 +10,6 @@
 
 /// ComponentWithIssueCountAssignee : The details of the user associated with `assigneeType`, if any. See `realAssignee` for details of the user assigned to issues created with this component.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ComponentWithIssueCountAssignee {
     /// The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*. Required in requests.
@@ -95,4 +93,3 @@ impl Default for AccountType {
         Self::Atlassian
     }
 }
-

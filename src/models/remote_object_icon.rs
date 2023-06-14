@@ -10,8 +10,6 @@
 
 /// RemoteObjectIcon : Details of the icon for the item. If no icon is defined, the default link icon is used in Jira.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RemoteObjectIcon {
     /// The URL of the tooltip, used only for a status icon. If not set, the status icon in Jira is not clickable.
@@ -35,5 +33,3 @@ impl RemoteObjectIcon {
         }
     }
 }
-
-

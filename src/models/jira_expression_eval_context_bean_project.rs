@@ -10,8 +10,6 @@
 
 /// JiraExpressionEvalContextBeanProject : The project that is available under the `project` variable when evaluating the expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionEvalContextBeanProject {
     /// The ID of the referenced item.
@@ -31,5 +29,3 @@ impl JiraExpressionEvalContextBeanProject {
         }
     }
 }
-
-

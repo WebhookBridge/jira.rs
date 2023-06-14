@@ -10,8 +10,6 @@
 
 /// FilterSubscriptions : A paginated list of the users that are subscribed to the filter.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FilterSubscriptions {
     /// The index of the last item returned on the page.
@@ -43,5 +41,3 @@ impl FilterSubscriptions {
         }
     }
 }
-
-

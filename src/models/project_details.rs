@@ -10,8 +10,6 @@
 
 /// ProjectDetails : Details about a project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectDetails {
     #[serde(rename = "avatarUrls", skip_serializing_if = "Option::is_none")]
@@ -70,4 +68,3 @@ impl Default for ProjectTypeKey {
         Self::Software
     }
 }
-

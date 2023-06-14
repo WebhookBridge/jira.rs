@@ -10,24 +10,47 @@
 
 /// FieldUpdateOperation : Details of an operation to perform on a field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldUpdateOperation {
     /// The value to add to the field.
-    #[serde(rename = "add", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "add",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub add: Option<Option<serde_json::Value>>,
     /// The field value to copy from another issue.
-    #[serde(rename = "copy", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "copy",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub copy: Option<Option<serde_json::Value>>,
     /// The value to edit in the field.
-    #[serde(rename = "edit", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "edit",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub edit: Option<Option<serde_json::Value>>,
     /// The value to removed from the field.
-    #[serde(rename = "remove", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "remove",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub remove: Option<Option<serde_json::Value>>,
     /// The value to set in the field.
-    #[serde(rename = "set", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "set",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub set: Option<Option<serde_json::Value>>,
 }
 
@@ -43,5 +66,3 @@ impl FieldUpdateOperation {
         }
     }
 }
-
-

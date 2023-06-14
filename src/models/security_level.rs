@@ -10,8 +10,6 @@
 
 /// SecurityLevel : Details of an issue level security item.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SecurityLevel {
     /// The description of the issue level security item.
@@ -24,7 +22,10 @@ pub struct SecurityLevel {
     #[serde(rename = "isDefault", skip_serializing_if = "Option::is_none")]
     pub is_default: Option<bool>,
     /// The ID of the issue level security scheme.
-    #[serde(rename = "issueSecuritySchemeId", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "issueSecuritySchemeId",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub issue_security_scheme_id: Option<String>,
     /// The name of the issue level security item.
     #[serde(rename = "name", skip_serializing_if = "Option::is_none")]
@@ -47,5 +48,3 @@ impl SecurityLevel {
         }
     }
 }
-
-

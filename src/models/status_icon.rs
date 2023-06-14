@@ -10,8 +10,6 @@
 
 /// StatusIcon : Details of the icon representing the status. If not provided, no status icon displays in Jira.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusIcon {
     /// The URL of the tooltip, used only for a status icon. If not set, the status icon in Jira is not clickable.
@@ -35,5 +33,3 @@ impl StatusIcon {
         }
     }
 }
-
-

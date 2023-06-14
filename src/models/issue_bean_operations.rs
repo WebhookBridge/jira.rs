@@ -10,8 +10,6 @@
 
 /// IssueBeanOperations : The operations that can be performed on the issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueBeanOperations {
     /// Details of the link groups defining issue operations.
@@ -22,10 +20,6 @@ pub struct IssueBeanOperations {
 impl IssueBeanOperations {
     /// The operations that can be performed on the issue.
     pub fn new() -> IssueBeanOperations {
-        IssueBeanOperations {
-            link_groups: None,
-        }
+        IssueBeanOperations { link_groups: None }
     }
 }
-
-

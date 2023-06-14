@@ -10,8 +10,6 @@
 
 /// ReorderIssuePriorities : Change the order of issue priorities.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ReorderIssuePriorities {
     /// The ID of the priority. Required if `position` isn't provided.
@@ -35,5 +33,3 @@ impl ReorderIssuePriorities {
         }
     }
 }
-
-

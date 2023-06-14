@@ -10,8 +10,6 @@
 
 /// CreateWorkflowTransitionDetails : The details of a workflow transition.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreateWorkflowTransitionDetails {
     /// The description of the transition. The maximum length is 1000 characters.
@@ -70,4 +68,3 @@ impl Default for RHashType {
         Self::Global
     }
 }
-

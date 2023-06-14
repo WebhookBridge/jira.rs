@@ -10,8 +10,6 @@
 
 /// DashboardGadget : Details of a gadget.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct DashboardGadget {
     /// The color of the gadget. Should be one of `blue`, `red`, `yellow`, `green`, `cyan`, `purple`, `gray`, or `white`.
@@ -35,7 +33,12 @@ pub struct DashboardGadget {
 
 impl DashboardGadget {
     /// Details of a gadget.
-    pub fn new(color: Color, id: i64, position: crate::models::DashboardGadgetPosition, title: String) -> DashboardGadget {
+    pub fn new(
+        color: Color,
+        id: i64,
+        position: crate::models::DashboardGadgetPosition,
+        title: String,
+    ) -> DashboardGadget {
         DashboardGadget {
             color,
             id,
@@ -73,4 +76,3 @@ impl Default for Color {
         Self::Blue
     }
 }
-

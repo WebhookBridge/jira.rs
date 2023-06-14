@@ -10,15 +10,19 @@
 
 /// ChangelogHistoryMetadata : The history metadata associated with the changed.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ChangelogHistoryMetadata {
     /// The activity described in the history record.
-    #[serde(rename = "activityDescription", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "activityDescription",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub activity_description: Option<String>,
     /// The key of the activity described in the history record.
-    #[serde(rename = "activityDescriptionKey", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "activityDescriptionKey",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub activity_description_key: Option<String>,
     #[serde(rename = "actor", skip_serializing_if = "Option::is_none")]
     pub actor: Option<Box<crate::models::HistoryMetadataActor>>,
@@ -34,7 +38,10 @@ pub struct ChangelogHistoryMetadata {
     #[serde(rename = "emailDescription", skip_serializing_if = "Option::is_none")]
     pub email_description: Option<String>,
     /// The description key of the email address associated the history record.
-    #[serde(rename = "emailDescriptionKey", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "emailDescriptionKey",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub email_description_key: Option<String>,
     /// Additional arbitrary information about the history record.
     #[serde(rename = "extraData", skip_serializing_if = "Option::is_none")]
@@ -64,5 +71,3 @@ impl ChangelogHistoryMetadata {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// UserGroups : The groups that the user belongs to.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UserGroups {
     #[serde(rename = "callback", skip_serializing_if = "Option::is_none")]
@@ -38,5 +36,3 @@ impl UserGroups {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// Project : Details about a project.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Project {
     /// Whether the project is archived.
@@ -195,4 +193,3 @@ impl Default for Style {
         Self::Classic
     }
 }
-

@@ -10,8 +10,6 @@
 
 /// TaskProgressBeanObject : Details about a task.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct TaskProgressBeanObject {
     /// The description of the task.
@@ -36,7 +34,12 @@ pub struct TaskProgressBeanObject {
     #[serde(rename = "progress")]
     pub progress: i64,
     /// The result of the task execution.
-    #[serde(rename = "result", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "result",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub result: Option<Option<serde_json::Value>>,
     /// The URL of the task.
     #[serde(rename = "self")]
@@ -57,7 +60,16 @@ pub struct TaskProgressBeanObject {
 
 impl TaskProgressBeanObject {
     /// Details about a task.
-    pub fn new(elapsed_runtime: i64, id: String, last_update: i64, progress: i64, param_self: String, status: Status, submitted: i64, submitted_by: i64) -> TaskProgressBeanObject {
+    pub fn new(
+        elapsed_runtime: i64,
+        id: String,
+        last_update: i64,
+        progress: i64,
+        param_self: String,
+        status: Status,
+        submitted: i64,
+        submitted_by: i64,
+    ) -> TaskProgressBeanObject {
         TaskProgressBeanObject {
             description: None,
             elapsed_runtime,
@@ -100,4 +112,3 @@ impl Default for Status {
         Self::Enqueued
     }
 }
-

@@ -10,8 +10,6 @@
 
 /// PageOfWorklogs : Paginated list of worklog details
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageOfWorklogs {
     /// The maximum number of results that could be on the page.
@@ -39,5 +37,3 @@ impl PageOfWorklogs {
         }
     }
 }
-
-

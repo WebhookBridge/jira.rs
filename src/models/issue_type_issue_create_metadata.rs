@@ -10,8 +10,6 @@
 
 /// IssueTypeIssueCreateMetadata : Details of the issue creation metadata for an issue type.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeIssueCreateMetadata {
     /// The ID of the issue type's avatar.
@@ -70,5 +68,3 @@ impl IssueTypeIssueCreateMetadata {
         }
     }
 }
-
-

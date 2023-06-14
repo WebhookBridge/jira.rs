@@ -10,8 +10,6 @@
 
 /// SharePermissionUser : The user account ID that the filter is shared with. For a request, specify the `accountId` property for the user.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SharePermissionUser {
     /// The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*.
@@ -50,5 +48,3 @@ impl SharePermissionUser {
         }
     }
 }
-
-

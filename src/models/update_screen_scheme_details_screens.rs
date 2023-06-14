@@ -10,8 +10,6 @@
 
 /// UpdateScreenSchemeDetailsScreens : The IDs of the screens for the screen types of the screen scheme. Only screens used in classic projects are accepted.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct UpdateScreenSchemeDetailsScreens {
     /// The ID of the create screen. To remove the screen association, pass a null.
@@ -39,5 +37,3 @@ impl UpdateScreenSchemeDetailsScreens {
         }
     }
 }
-
-

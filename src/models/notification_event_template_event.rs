@@ -10,8 +10,6 @@
 
 /// NotificationEventTemplateEvent : The template of the event. Only custom events configured by Jira administrators have template.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationEventTemplateEvent {
     /// The description of the event.
@@ -38,5 +36,3 @@ impl NotificationEventTemplateEvent {
         }
     }
 }
-
-

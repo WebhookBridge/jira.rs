@@ -10,8 +10,6 @@
 
 /// WorkflowTransitionProperty : Details about the server Jira is running on.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorkflowTransitionProperty {
     /// The ID of the transition property.
@@ -35,5 +33,3 @@ impl WorkflowTransitionProperty {
         }
     }
 }
-
-

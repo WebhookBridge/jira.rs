@@ -10,8 +10,6 @@
 
 /// IssueTypeWithStatus : Status details for an issue type.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeWithStatus {
     /// The ID of the issue type.
@@ -33,7 +31,13 @@ pub struct IssueTypeWithStatus {
 
 impl IssueTypeWithStatus {
     /// Status details for an issue type.
-    pub fn new(id: String, name: String, param_self: String, statuses: Vec<crate::models::StatusDetails>, subtask: bool) -> IssueTypeWithStatus {
+    pub fn new(
+        id: String,
+        name: String,
+        param_self: String,
+        statuses: Vec<crate::models::StatusDetails>,
+        subtask: bool,
+    ) -> IssueTypeWithStatus {
         IssueTypeWithStatus {
             id,
             name,
@@ -43,5 +47,3 @@ impl IssueTypeWithStatus {
         }
     }
 }
-
-

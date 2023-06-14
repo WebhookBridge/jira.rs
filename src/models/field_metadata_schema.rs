@@ -10,8 +10,6 @@
 
 /// FieldMetadataSchema : The data type of the field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldMetadataSchema {
     /// If the field is a custom field, the configuration of the field.
@@ -47,5 +45,3 @@ impl FieldMetadataSchema {
         }
     }
 }
-
-

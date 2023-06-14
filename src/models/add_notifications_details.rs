@@ -10,8 +10,6 @@
 
 /// AddNotificationsDetails : Details of notifications which should be added to the notification scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AddNotificationsDetails {
     /// The list of notifications which should be added to the notification scheme.
@@ -21,11 +19,11 @@ pub struct AddNotificationsDetails {
 
 impl AddNotificationsDetails {
     /// Details of notifications which should be added to the notification scheme.
-    pub fn new(notification_scheme_events: Vec<crate::models::NotificationSchemeEventDetails>) -> AddNotificationsDetails {
+    pub fn new(
+        notification_scheme_events: Vec<crate::models::NotificationSchemeEventDetails>,
+    ) -> AddNotificationsDetails {
         AddNotificationsDetails {
             notification_scheme_events,
         }
     }
 }
-
-

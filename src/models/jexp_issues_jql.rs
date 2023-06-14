@@ -10,8 +10,6 @@
 
 /// JexpIssuesJql : The JQL query that specifies the set of issues available in the Jira expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JexpIssuesJql {
     /// The maximum number of issues to return from the JQL query. Inspect `meta.issues.jql.maxResults` in the response to ensure the maximum value has not been exceeded.
@@ -56,4 +54,3 @@ impl Default for Validation {
         Self::Strict
     }
 }
-

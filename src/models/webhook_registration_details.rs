@@ -10,8 +10,6 @@
 
 /// WebhookRegistrationDetails : Details of webhooks to register.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WebhookRegistrationDetails {
     /// The URL that specifies where to send the webhooks. This URL must use the same base URL as the Connect app. Only a single URL per app is allowed to be registered.
@@ -24,12 +22,10 @@ pub struct WebhookRegistrationDetails {
 
 impl WebhookRegistrationDetails {
     /// Details of webhooks to register.
-    pub fn new(url: String, webhooks: Vec<crate::models::WebhookDetails>) -> WebhookRegistrationDetails {
-        WebhookRegistrationDetails {
-            url,
-            webhooks,
-        }
+    pub fn new(
+        url: String,
+        webhooks: Vec<crate::models::WebhookDetails>,
+    ) -> WebhookRegistrationDetails {
+        WebhookRegistrationDetails { url, webhooks }
     }
 }
-
-

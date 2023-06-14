@@ -10,8 +10,6 @@
 
 /// ApplicationProperty : Details of an application property.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ApplicationProperty {
     /// The allowed values, if applicable.
@@ -58,5 +56,3 @@ impl ApplicationProperty {
         }
     }
 }
-
-

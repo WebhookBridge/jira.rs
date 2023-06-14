@@ -10,8 +10,6 @@
 
 /// Screen : A screen.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Screen {
     /// The description of the screen.
@@ -38,5 +36,3 @@ impl Screen {
         }
     }
 }
-
-

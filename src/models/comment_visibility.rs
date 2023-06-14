@@ -10,12 +10,15 @@
 
 /// CommentVisibility : The group or role to which this comment is visible. Optional on create and update.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CommentVisibility {
     /// The ID of the group or the name of the role that visibility of this item is restricted to.
-    #[serde(rename = "identifier", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "identifier",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub identifier: Option<Option<String>>,
     /// Whether visibility of this item is restricted to a group or role.
     #[serde(rename = "type", skip_serializing_if = "Option::is_none")]
@@ -50,4 +53,3 @@ impl Default for RHashType {
         Self::Group
     }
 }
-

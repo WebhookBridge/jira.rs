@@ -10,8 +10,6 @@
 
 /// JqlQueryClauseOperand : Details of an operand in a JQL clause.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlQueryClauseOperand {
     /// Encoded operand, which can be used directly in a JQL query.
@@ -39,7 +37,13 @@ pub struct JqlQueryClauseOperand {
 
 impl JqlQueryClauseOperand {
     /// Details of an operand in a JQL clause.
-    pub fn new(values: Vec<crate::models::JqlQueryUnitaryOperand>, value: String, arguments: Vec<String>, function: String, keyword: Keyword) -> JqlQueryClauseOperand {
+    pub fn new(
+        values: Vec<crate::models::JqlQueryUnitaryOperand>,
+        value: String,
+        arguments: Vec<String>,
+        function: String,
+        keyword: Keyword,
+    ) -> JqlQueryClauseOperand {
         JqlQueryClauseOperand {
             encoded_operand: None,
             values,
@@ -64,4 +68,3 @@ impl Default for Keyword {
         Self::Empty
     }
 }
-

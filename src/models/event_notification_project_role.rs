@@ -10,8 +10,6 @@
 
 /// EventNotificationProjectRole : The specified project role.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct EventNotificationProjectRole {
     /// The list of users who act in this role.
@@ -66,5 +64,3 @@ impl EventNotificationProjectRole {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// LinkedIssue : The ID or key of a linked issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct LinkedIssue {
     #[serde(rename = "fields", skip_serializing_if = "Option::is_none")]
@@ -38,5 +36,3 @@ impl LinkedIssue {
         }
     }
 }
-
-

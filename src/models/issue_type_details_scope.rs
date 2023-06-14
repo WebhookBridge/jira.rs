@@ -10,8 +10,6 @@
 
 /// IssueTypeDetailsScope : Details of the next-gen projects the issue type is available in.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeDetailsScope {
     #[serde(rename = "project", skip_serializing_if = "Option::is_none")]
@@ -45,4 +43,3 @@ impl Default for RHashType {
         Self::Project
     }
 }
-

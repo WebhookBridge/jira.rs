@@ -10,8 +10,6 @@
 
 /// OrderOfIssueTypes : An ordered list of issue type IDs and information about where to move them.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct OrderOfIssueTypes {
     /// The ID of the issue type to place the moved issue types after. Required if `position` isn't provided.
@@ -50,4 +48,3 @@ impl Default for Position {
         Self::First
     }
 }
-

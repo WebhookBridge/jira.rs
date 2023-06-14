@@ -10,8 +10,6 @@
 
 /// JiraExpressionEvalContextBeanIssue : The issue that is available under the `issue` variable when evaluating the expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionEvalContextBeanIssue {
     /// The ID of the referenced item.
@@ -31,5 +29,3 @@ impl JiraExpressionEvalContextBeanIssue {
         }
     }
 }
-
-

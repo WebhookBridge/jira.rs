@@ -10,8 +10,6 @@
 
 /// FieldsStatus : The status of the linked issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldsStatus {
     /// The description of the status.
@@ -46,5 +44,3 @@ impl FieldsStatus {
         }
     }
 }
-
-

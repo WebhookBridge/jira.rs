@@ -10,8 +10,6 @@
 
 /// NotificationTo : The recipients of the email notification for the issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct NotificationTo {
     /// Whether the notification should be sent to the issue's assignees.
@@ -51,5 +49,3 @@ impl NotificationTo {
         }
     }
 }
-
-

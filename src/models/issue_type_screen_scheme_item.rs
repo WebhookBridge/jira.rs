@@ -10,8 +10,6 @@
 
 /// IssueTypeScreenSchemeItem : The screen scheme for an issue type.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeScreenSchemeItem {
     /// The ID of the issue type or *default*. Only issue types used in classic projects are accepted. When creating an issue screen scheme, an entry for *default* must be provided and defines the mapping for all issue types without a screen scheme. Otherwise, a *default* entry can't be provided.
@@ -27,7 +25,11 @@ pub struct IssueTypeScreenSchemeItem {
 
 impl IssueTypeScreenSchemeItem {
     /// The screen scheme for an issue type.
-    pub fn new(issue_type_id: String, issue_type_screen_scheme_id: String, screen_scheme_id: String) -> IssueTypeScreenSchemeItem {
+    pub fn new(
+        issue_type_id: String,
+        issue_type_screen_scheme_id: String,
+        screen_scheme_id: String,
+    ) -> IssueTypeScreenSchemeItem {
         IssueTypeScreenSchemeItem {
             issue_type_id,
             issue_type_screen_scheme_id,
@@ -35,5 +37,3 @@ impl IssueTypeScreenSchemeItem {
         }
     }
 }
-
-

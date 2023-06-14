@@ -10,8 +10,6 @@
 
 /// CustomFieldContext : The details of a custom field context.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContext {
     /// The description of the context.
@@ -33,7 +31,13 @@ pub struct CustomFieldContext {
 
 impl CustomFieldContext {
     /// The details of a custom field context.
-    pub fn new(description: String, id: String, is_any_issue_type: bool, is_global_context: bool, name: String) -> CustomFieldContext {
+    pub fn new(
+        description: String,
+        id: String,
+        is_any_issue_type: bool,
+        is_global_context: bool,
+        name: String,
+    ) -> CustomFieldContext {
         CustomFieldContext {
             description,
             id,
@@ -43,5 +47,3 @@ impl CustomFieldContext {
         }
     }
 }
-
-

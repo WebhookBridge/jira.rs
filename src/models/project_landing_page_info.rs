@@ -10,8 +10,6 @@
 
 /// ProjectLandingPageInfo : The project landing page info.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectLandingPageInfo {
     #[serde(rename = "attributes", skip_serializing_if = "Option::is_none")]
@@ -56,5 +54,3 @@ impl ProjectLandingPageInfo {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// Attachment : Details about an attachment.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Attachment {
     #[serde(rename = "author", skip_serializing_if = "Option::is_none")]
@@ -58,5 +56,3 @@ impl Attachment {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// IssueUpdateDetailsTransition : Details of a transition. Required when performing a transition, optional when creating or editing an issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueUpdateDetailsTransition {
     /// Expand options that include additional transition details in the response.
@@ -65,5 +63,3 @@ impl IssueUpdateDetailsTransition {
         }
     }
 }
-
-

@@ -10,12 +10,15 @@
 
 /// JqlQueryToSanitize : The JQL query to sanitize for the account ID. If the account ID is null, sanitizing is performed for an anonymous user.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JqlQueryToSanitize {
     /// The account ID of the user, which uniquely identifies the user across all Atlassian products. For example, *5b10ac8d82e05b22cc7d4ef5*.
-    #[serde(rename = "accountId", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "accountId",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub account_id: Option<Option<String>>,
     /// The query to sanitize.
     #[serde(rename = "query")]
@@ -31,5 +34,3 @@ impl JqlQueryToSanitize {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// JiraExpressionResult : The result of evaluating a Jira expression.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionResult {
     #[serde(rename = "meta", skip_serializing_if = "Option::is_none")]
@@ -24,11 +22,6 @@ pub struct JiraExpressionResult {
 impl JiraExpressionResult {
     /// The result of evaluating a Jira expression.
     pub fn new(value: Option<serde_json::Value>) -> JiraExpressionResult {
-        JiraExpressionResult {
-            meta: None,
-            value,
-        }
+        JiraExpressionResult { meta: None, value }
     }
 }
-
-

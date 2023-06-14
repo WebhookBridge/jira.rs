@@ -10,8 +10,6 @@
 
 /// IssueLinkType : The type of link between the issues.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueLinkType {
     /// The ID of the issue link type and is used as follows:   *  In the [ issueLink](#api-rest-api-3-issueLink-post) resource it is the type of issue link. Required on create when `name` isn't provided. Otherwise, read only.  *  In the [ issueLinkType](#api-rest-api-3-issueLinkType-post) resource it is read only.
@@ -43,5 +41,3 @@ impl IssueLinkType {
         }
     }
 }
-
-

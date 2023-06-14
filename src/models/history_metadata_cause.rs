@@ -10,8 +10,6 @@
 
 /// HistoryMetadataCause : Details of the cause that triggered the creation the history record.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct HistoryMetadataCause {
     /// The URL to an avatar for the user or system associated with a history record.
@@ -47,5 +45,3 @@ impl HistoryMetadataCause {
         }
     }
 }
-
-

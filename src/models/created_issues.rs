@@ -10,8 +10,6 @@
 
 /// CreatedIssues : Details about the issues created and the errors for requests that failed.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreatedIssues {
     /// Error details for failed issue creation requests.
@@ -31,5 +29,3 @@ impl CreatedIssues {
         }
     }
 }
-
-

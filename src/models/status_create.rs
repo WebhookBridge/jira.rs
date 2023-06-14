@@ -10,8 +10,6 @@
 
 /// StatusCreate : Details of the status being created.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct StatusCreate {
     /// The description of the status.
@@ -52,4 +50,3 @@ impl Default for StatusCategory {
         Self::Todo
     }
 }
-

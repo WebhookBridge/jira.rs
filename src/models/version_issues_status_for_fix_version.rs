@@ -10,8 +10,6 @@
 
 /// VersionIssuesStatusForFixVersion : If the expand option `issuesstatus` is used, returns the count of issues in this version for each of the status categories *to do*, *in progress*, *done*, and *unmapped*. The *unmapped* property contains a count of issues with a status other than *to do*, *in progress*, and *done*.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct VersionIssuesStatusForFixVersion {
     /// Count of issues with status *done*.
@@ -39,5 +37,3 @@ impl VersionIssuesStatusForFixVersion {
         }
     }
 }
-
-

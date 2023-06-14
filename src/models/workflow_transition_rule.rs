@@ -10,12 +10,15 @@
 
 /// WorkflowTransitionRule : A workflow transition rule.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WorkflowTransitionRule {
     /// EXPERIMENTAL. The configuration of the transition rule.
-    #[serde(rename = "configuration", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "configuration",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub configuration: Option<Option<serde_json::Value>>,
     /// The type of the transition rule.
     #[serde(rename = "type")]
@@ -31,5 +34,3 @@ impl WorkflowTransitionRule {
         }
     }
 }
-
-

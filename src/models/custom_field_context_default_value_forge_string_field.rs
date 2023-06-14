@@ -10,8 +10,6 @@
 
 /// CustomFieldContextDefaultValueForgeStringField : The default text for a Forge string custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContextDefaultValueForgeStringField {
     /// The ID of the context.
@@ -26,7 +24,10 @@ pub struct CustomFieldContextDefaultValueForgeStringField {
 
 impl CustomFieldContextDefaultValueForgeStringField {
     /// The default text for a Forge string custom field.
-    pub fn new(context_id: String, r#type: String) -> CustomFieldContextDefaultValueForgeStringField {
+    pub fn new(
+        context_id: String,
+        r#type: String,
+    ) -> CustomFieldContextDefaultValueForgeStringField {
         CustomFieldContextDefaultValueForgeStringField {
             context_id,
             text: None,
@@ -34,5 +35,3 @@ impl CustomFieldContextDefaultValueForgeStringField {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// CreatedIssueTransition : The response code and messages related to any requested transition.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CreatedIssueTransition {
     #[serde(rename = "errorCollection", skip_serializing_if = "Option::is_none")]
@@ -32,5 +30,3 @@ impl CreatedIssueTransition {
         }
     }
 }
-
-

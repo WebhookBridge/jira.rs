@@ -10,8 +10,6 @@
 
 /// JiraExpressionResultMeta : Contains various characteristics of the performed expression evaluation.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JiraExpressionResultMeta {
     #[serde(rename = "complexity", skip_serializing_if = "Option::is_none")]
@@ -29,5 +27,3 @@ impl JiraExpressionResultMeta {
         }
     }
 }
-
-

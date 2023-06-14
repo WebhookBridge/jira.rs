@@ -10,8 +10,6 @@
 
 /// CustomFieldContextDefaultValueUrl : The default value for a URL custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContextDefaultValueUrl {
     /// The ID of the context.
@@ -26,7 +24,11 @@ pub struct CustomFieldContextDefaultValueUrl {
 
 impl CustomFieldContextDefaultValueUrl {
     /// The default value for a URL custom field.
-    pub fn new(context_id: String, r#type: String, url: String) -> CustomFieldContextDefaultValueUrl {
+    pub fn new(
+        context_id: String,
+        r#type: String,
+        url: String,
+    ) -> CustomFieldContextDefaultValueUrl {
         CustomFieldContextDefaultValueUrl {
             context_id,
             r#type,
@@ -34,5 +36,3 @@ impl CustomFieldContextDefaultValueUrl {
         }
     }
 }
-
-

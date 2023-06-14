@@ -10,8 +10,6 @@
 
 /// FieldsIssueType : The type of the linked issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldsIssueType {
     /// The ID of the issue type's avatar.
@@ -62,5 +60,3 @@ impl FieldsIssueType {
         }
     }
 }
-
-

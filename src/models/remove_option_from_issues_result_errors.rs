@@ -10,8 +10,6 @@
 
 /// RemoveOptionFromIssuesResultErrors : A collection of errors related to unchanged issues. The collection size is limited, which means not all errors may be returned.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct RemoveOptionFromIssuesResultErrors {
     /// The list of error messages produced by this operation. For example, \"input parameter 'key' must be provided\"
@@ -34,5 +32,3 @@ impl RemoveOptionFromIssuesResultErrors {
         }
     }
 }
-
-

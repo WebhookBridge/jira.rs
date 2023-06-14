@@ -10,8 +10,6 @@
 
 /// IssueTypeScreenSchemeUpdateDetails : Details of an issue type screen scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueTypeScreenSchemeUpdateDetails {
     /// The description of the issue type screen scheme. The maximum length is 255 characters.
@@ -31,5 +29,3 @@ impl IssueTypeScreenSchemeUpdateDetails {
         }
     }
 }
-
-

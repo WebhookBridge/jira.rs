@@ -10,8 +10,6 @@
 
 /// FailedWebhooks : A page of failed webhooks.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FailedWebhooks {
     /// The maximum number of items on the page. If the list of values is shorter than this number, then there are no more pages.
@@ -35,5 +33,3 @@ impl FailedWebhooks {
         }
     }
 }
-
-

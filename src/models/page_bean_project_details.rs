@@ -10,8 +10,6 @@
 
 /// PageBeanProjectDetails : A page of items.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PageBeanProjectDetails {
     /// Whether this is the last page.
@@ -51,5 +49,3 @@ impl PageBeanProjectDetails {
         }
     }
 }
-
-

@@ -10,8 +10,6 @@
 
 /// FilterSubscription : Details of a user or group subscribing to a filter.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FilterSubscription {
     #[serde(rename = "group", skip_serializing_if = "Option::is_none")]
@@ -33,5 +31,3 @@ impl FilterSubscription {
         }
     }
 }
-
-

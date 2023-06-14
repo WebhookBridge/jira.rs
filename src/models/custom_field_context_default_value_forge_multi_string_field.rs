@@ -10,8 +10,6 @@
 
 /// CustomFieldContextDefaultValueForgeMultiStringField : The default text for a Forge collection of strings custom field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct CustomFieldContextDefaultValueForgeMultiStringField {
     #[serde(rename = "type")]
@@ -30,5 +28,3 @@ impl CustomFieldContextDefaultValueForgeMultiStringField {
         }
     }
 }
-
-

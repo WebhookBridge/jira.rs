@@ -10,8 +10,6 @@
 
 /// FieldMetadata : The metadata describing an issue field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FieldMetadata {
     /// The list of values allowed in the field.
@@ -24,7 +22,12 @@ pub struct FieldMetadata {
     #[serde(rename = "configuration", skip_serializing_if = "Option::is_none")]
     pub configuration: Option<::std::collections::HashMap<String, serde_json::Value>>,
     /// The default value of the field.
-    #[serde(rename = "defaultValue", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "defaultValue",
+        default,
+        with = "::serde_with::rust::double_option",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub default_value: Option<Option<serde_json::Value>>,
     /// Whether the field has a default value.
     #[serde(rename = "hasDefaultValue", skip_serializing_if = "Option::is_none")]
@@ -47,7 +50,13 @@ pub struct FieldMetadata {
 
 impl FieldMetadata {
     /// The metadata describing an issue field.
-    pub fn new(key: String, name: String, operations: Vec<String>, required: bool, schema: crate::models::FieldMetadataSchema) -> FieldMetadata {
+    pub fn new(
+        key: String,
+        name: String,
+        operations: Vec<String>,
+        required: bool,
+        schema: crate::models::FieldMetadataSchema,
+    ) -> FieldMetadata {
         FieldMetadata {
             allowed_values: None,
             auto_complete_url: None,
@@ -62,5 +71,3 @@ impl FieldMetadata {
         }
     }
 }
-
-

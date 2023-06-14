@@ -10,8 +10,6 @@
 
 /// Dashboard : Details of a dashboard.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Dashboard {
     /// The automatic refresh interval for the dashboard in milliseconds.
@@ -77,5 +75,3 @@ impl Dashboard {
         }
     }
 }
-
-

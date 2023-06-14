@@ -10,8 +10,6 @@
 
 /// IssueBeanChangelog : Details of changelogs associated with the issue.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueBeanChangelog {
     /// The list of changelogs.
@@ -39,5 +37,3 @@ impl IssueBeanChangelog {
         }
     }
 }
-
-

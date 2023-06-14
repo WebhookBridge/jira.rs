@@ -10,8 +10,6 @@
 
 /// SetDefaultPriorityRequest : The new default issue priority.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct SetDefaultPriorityRequest {
     /// The ID of the new default issue priority. Must be an existing ID or null. Setting this to null erases the default priority setting.
@@ -22,10 +20,6 @@ pub struct SetDefaultPriorityRequest {
 impl SetDefaultPriorityRequest {
     /// The new default issue priority.
     pub fn new(id: String) -> SetDefaultPriorityRequest {
-        SetDefaultPriorityRequest {
-            id,
-        }
+        SetDefaultPriorityRequest { id }
     }
 }
-
-

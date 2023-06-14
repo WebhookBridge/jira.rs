@@ -10,8 +10,6 @@
 
 /// IssueBeanEditmeta : The metadata for the fields on the issue that can be amended.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueBeanEditmeta {
     #[serde(rename = "fields", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct IssueBeanEditmeta {
 impl IssueBeanEditmeta {
     /// The metadata for the fields on the issue that can be amended.
     pub fn new() -> IssueBeanEditmeta {
-        IssueBeanEditmeta {
-            fields: None,
-        }
+        IssueBeanEditmeta { fields: None }
     }
 }
-
-

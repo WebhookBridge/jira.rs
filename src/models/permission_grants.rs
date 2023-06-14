@@ -10,8 +10,6 @@
 
 /// PermissionGrants : List of permission grants.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PermissionGrants {
     /// Expand options that include additional permission grant details in the response.
@@ -31,5 +29,3 @@ impl PermissionGrants {
         }
     }
 }
-
-

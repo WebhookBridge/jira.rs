@@ -10,8 +10,6 @@
 
 /// FilterSharedUsers : A paginated list of the users that the filter is shared with. This includes users that are members of the groups or can browse the projects that the filter is shared with.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct FilterSharedUsers {
     /// The index of the last item returned on the page.
@@ -43,5 +41,3 @@ impl FilterSharedUsers {
         }
     }
 }
-
-

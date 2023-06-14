@@ -10,8 +10,6 @@
 
 /// IssueUpdateMetadata : A list of editable field details.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IssueUpdateMetadata {
     #[serde(rename = "fields", skip_serializing_if = "Option::is_none")]
@@ -21,10 +19,6 @@ pub struct IssueUpdateMetadata {
 impl IssueUpdateMetadata {
     /// A list of editable field details.
     pub fn new() -> IssueUpdateMetadata {
-        IssueUpdateMetadata {
-            fields: None,
-        }
+        IssueUpdateMetadata { fields: None }
     }
 }
-
-

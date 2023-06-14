@@ -10,8 +10,6 @@
 
 /// JsonTypeBean : The schema of a field.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct JsonTypeBean {
     /// If the field is a custom field, the configuration of the field.
@@ -47,5 +45,3 @@ impl JsonTypeBean {
         }
     }
 }
-
-

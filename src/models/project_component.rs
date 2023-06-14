@@ -10,8 +10,6 @@
 
 /// ProjectComponent : Details about a project component.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ProjectComponent {
     #[serde(rename = "assignee", skip_serializing_if = "Option::is_none")]
@@ -26,7 +24,10 @@ pub struct ProjectComponent {
     #[serde(rename = "id", skip_serializing_if = "Option::is_none")]
     pub id: Option<String>,
     /// Whether a user is associated with `assigneeType`. For example, if the `assigneeType` is set to `COMPONENT_LEAD` but the component lead is not set, then `false` is returned.
-    #[serde(rename = "isAssigneeTypeValid", skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "isAssigneeTypeValid",
+        skip_serializing_if = "Option::is_none"
+    )]
     pub is_assignee_type_valid: Option<bool>,
     #[serde(rename = "lead", skip_serializing_if = "Option::is_none")]
     pub lead: Option<Box<crate::models::ProjectComponentLead>>,
@@ -113,4 +114,3 @@ impl Default for RealAssigneeType {
         Self::ProjectDefault
     }
 }
-

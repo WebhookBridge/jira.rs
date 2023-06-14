@@ -10,8 +10,6 @@
 
 /// IconBean : An icon.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct IconBean {
     /// The URL of the tooltip, used only for a status icon.
@@ -35,5 +33,3 @@ impl IconBean {
         }
     }
 }
-
-

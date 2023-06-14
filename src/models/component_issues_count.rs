@@ -10,8 +10,6 @@
 
 /// ComponentIssuesCount : Count of issues assigned to a component.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct ComponentIssuesCount {
     /// The count of issues assigned to a component.
@@ -31,5 +29,3 @@ impl ComponentIssuesCount {
         }
     }
 }
-
-

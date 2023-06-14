@@ -10,8 +10,6 @@
 
 /// PermissionSchemeScope : The scope of the permission scheme.
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct PermissionSchemeScope {
     #[serde(rename = "project", skip_serializing_if = "Option::is_none")]
@@ -45,4 +43,3 @@ impl Default for RHashType {
         Self::Project
     }
 }
-
